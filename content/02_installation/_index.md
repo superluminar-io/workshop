@@ -4,7 +4,9 @@ chapter: true
 weight: 20
 ---
 
-# superwerker installation
+# superwerker setup
+
+## Installing superwerker
 
 The installation of superwerker is a rather easy task. The only thing you have to do is launching a CloudFormation stack specific to the region you want superwerker to deploy to. Just click on the corresponding link in the superwerker installation manual (https://github.com/superwerker/superwerker#quick-install).
 

@@ -1,22 +1,43 @@
 ---
-title: "AWS Modernization Workshop"
+title: "Jumpstart for sustainable AWS environments with superwerker"
 chapter: true
 weight: 1
 ---
 
-# AWS Modernization Workshop
+# Jumpstart for sustainable AWS environments with superwerker
 
 ### Welcome
 
-In this workshop you will learn why DevOps is a pattern for modernization and how to use patterns to release features and functionality at a faster pace.
+Welcome to the superwerker hands-on workshop. superwerker is a free, open-source AWS Quick Start that lets you quickly set up an AWS Cloud environment following best practices for security and efficiency so you can focus on your core business. It is built by AWS Advanced Partners who have decades of experience setting up and automating AWS Cloud environments.
+
+In this workshop, you will learn how to navigate in a multi-account AWS environment set up with superwerker. Companies of all sizes can benefit from deploying with Superwerker. Start-ups and small-to-medium businesses can especially benefit when time-to-market and financial aspects are concerns. Regardless of company size, Superwerker lets you run your business without spending excess time setting up and maintaining your AWS Cloud environment.
 
 ### Learning Objectives
-- Deploy Cloud9 as an IDE for completing workshop exercises.
-- How DevOps patterns help to release features and functionality faster.
-- Best practices for implementing 2 pizza team pipelines.
 
-{{% notice warning %}}
-<p style='text-align: left;'>
-The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various AWS services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.
-</p>
-{{% /notice %}}
+The learning objectives of this workshop are intended to familiarize users with the organization of a multi-account AWS Cloud environment based on established best practices using AWS services. These objectives are:
+
+- Setting up and governing a secure, multi-account AWS environment with AWS Control Tower
+- Learn everything Managing Users and Access Through AWS Single Sign-On
+- Centralized and automated data protection with AWS Backup
+- Aggregate, organize, and prioritize security alerts with AWS Security Hub
+- Configuring cost threshold alarms with AWS Budgets
+- Monitoring and protecting your AWS accounts, workloads, and data against malicious activity, threats, and breaches with Amazon GuardDuty
+- Protect infrastructure from intentional or unintentional mistakes using Service Control Policies
+
+### Expected Duration
+
+- 4 Hours
+
+### Who should take this workshop?
+
+The workshop familiarizes existing AWS services and shows best practices for managing multi-accounts AWS environments and deploying workloads to AWS cloud.
+
+The target audience may include:
+
+- Infrastructure Engineers
+- Solution Architects
+- Technical Leads
+- Product Owners
+- AWS Account Administrators
+
+The provided information is beneficial to all people involved with cloud engagements as this workshop outlines basic principles of establishing best practices for daily AWS usage.

@@ -24,6 +24,9 @@ The learning objectives of this workshop are intended to familiarize users with 
 - Monitoring and protecting your AWS accounts, workloads, and data against malicious activity, threats, and breaches with Amazon GuardDuty
 - Protect infrastructure from intentional or unintentional mistakes using Service Control Policies
 
+### Expected Duration
+
+- 4 Hours
 
 ### Who should take this workshop?
 

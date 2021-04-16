@@ -1,10 +1,10 @@
 ---
-title: "Single sign-on"
+title: "Single Sign-On"
 chapter: true
 weight: 10
 ---
 
-# Single sign-on
+# Single Sign-On
 
 By now you should only be able to log into your AWS environment using the root users email address and password. This is considered a bad practices and [very insecure](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html).
 
@@ -25,20 +25,19 @@ The root user of an AWS Account has the broadest permissions possible. Therefore
 
 ## AWS Single Sign-On
 
-### Basics 
+### Basics
 
 Now that you secured your root account, it is time to enable login via AWS Single Sign-On. This service allows you to create new user accounts that only exist in AWS SSO as well as connecting it to an existing identity provider like Googles G Suite or Azure AD.
 To keep the workshop simple, we reference the AWS documentation on [how to use G Suite as an external identity provider for AWS SSO](https://aws.amazon.com/blogs/security/how-to-use-g-suite-as-external-identity-provider-aws-sso/) as well as the generic documentation on [how to manage your identity source with AWS SSO](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source.html) here.
 
 ### Enable your admin account
 
-Since you learned that you should not use your root account to do your day-to-day tasks, you need a new account that satisfies this requirement.
-Luckily, AWS Control Tower integrates with AWS SSO and create an administrator account during the setup phase for you. You should have received an email with an activation link for this exact account.
+Since you learned that you should not use your root account to do your day-to-day tasks, you need a new account that satisfies this requirement. Luckily, AWS Control Tower integrates with AWS SSO and create an administrator account during the setup phase for you. You should have received an email with an activation link for this exact account.
 
 To enable this new account do the following:
 
 1. Open the email with the subject “Invitation to join AWS Single Sign-On”
-1. Read through the content 
+1. Read through the content
 1. Click on the “Accept Invitation” link
 1. Choose a new password and store it along with the username in a secure location
 
@@ -48,7 +47,12 @@ You can also learn the sub-domain your AWS SSO login is available from the invit
 
 ### Change the AWS SSO login sub-domain
 
-AWS SSO is a service that manages access on an organizational level (as opposed to per account-level). Therefore, it needs to be configured in a central location. For AWS SSO this is the root account. 
+AWS SSO is a service that manages access on an organizational level (as opposed to per account-level). Therefore, it needs to be configured in a central location. For AWS SSO this is the root account.
+
+There are two things to be aware of when changing the user portal URL:
+
+- This is a public domain, so it needs to be unique over all AWS customers
+- You can only change this URL once!
 
 To change the login sub-domain, perform the following steps:
 
@@ -58,11 +62,4 @@ To change the login sub-domain, perform the following steps:
 1. Find the “User portal URL” and click on customize
 1. Enter a sub-domain
 
-There are two things to be aware of when changing the user portal URL:
-
-- This is a public domain, so it needs to be unique over all AWS customers
-- You can only change this URL once!
-
 [Screenshots of the process]
-
-

@@ -21,13 +21,14 @@ There is only one setting we must change at this point which is the “Domain fo
 [Screenshot with filled domain input field]
 
 Once you entered the domain, scroll down to the bottom of the page and acknowledge that CloudFormation might create IAM resources, such as Roles and Policies. To learn more about creating IAM Resources via CloudFormation see [Acknowledging IAM resources in AWS CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#using-iam-capabilities).
+
 Now start the superwerker installation by clicking on the “Create Stack” button.
 
 You can now proceed with making the necessary DNS settings for your new superwerker installation.
 
 ## DNS Configuration
 
-Superwerker is deployed through CloudFormation and uses multiple stacks to roll out its features. For the mandatory “root email feature” to work you need to bring a domain and do the related DNS settings accordingly. 
+Superwerker is deployed through CloudFormation and uses multiple stacks to roll out its features. For the mandatory “root email feature” to work you need to bring a domain and do the related DNS settings accordingly.
 
 During the installation process, superwerker creates a Route53 hosted zone for domain and sub-domain you choose during “Domain configuration” earlier. Along with this hosted zone, Route53 creates a set of nameservers. Check the CloudFormation console to find out, if the “superwerker-Root-Mail” stack has been created.
 

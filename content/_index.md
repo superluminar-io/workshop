@@ -1,18 +1,18 @@
 ---
-title: "Jumpstart for sustainable AWS environments with superwerker"
+title: "Home"
 chapter: true
 weight: 1
 ---
 
 # Jumpstart for sustainable AWS environments with superwerker
 
-### Welcome
+## Welcome
 
-Welcome to the superwerker hands-on workshop. superwerker is a free, open-source AWS Quick Start that lets you quickly set up an AWS Cloud environment following best practices for security and efficiency so you can focus on your core business. It is built by AWS Advanced Partners who have decades of experience setting up and automating AWS Cloud environments.
+Welcome to the [superwerker] hands-on workshop. superwerker is a free, open-source [AWS Quick Start] that lets you quickly set up an AWS Cloud environment following best practices for security and efficiency so you can focus on your core business. It is built by AWS Advanced Partners who have decades of experience setting up and automating AWS Cloud environments.
 
-In this workshop, you will learn how to navigate in a multi-account AWS environment set up with superwerker. Companies of all sizes can benefit from deploying with Superwerker. Start-ups and small-to-medium businesses can especially benefit when time-to-market and financial aspects are concerns. Regardless of company size, Superwerker lets you run your business without spending excess time setting up and maintaining your AWS Cloud environment.
+In this workshop, you will learn how to navigate in a multi-account AWS environment set up with superwerker. Companies of all sizes can benefit from deploying with superwerker. Start-ups and small-to-medium businesses can especially benefit when time-to-market and financial aspects are concerns. Regardless of company size, superwerker lets you run your business without spending excess time setting up and maintaining your AWS Cloud environment.
 
-### Learning Objectives
+## Learning Objectives
 
 The learning objectives of this workshop are intended to familiarize users with the organization of a multi-account AWS Cloud environment based on established best practices using AWS services. These objectives are:
 
@@ -24,11 +24,11 @@ The learning objectives of this workshop are intended to familiarize users with 
 - Monitoring and protecting your AWS accounts, workloads, and data against malicious activity, threats, and breaches with Amazon GuardDuty
 - Protect infrastructure from intentional or unintentional mistakes using Service Control Policies
 
-### Expected Duration
+## Expected Duration
 
 - 4 Hours
 
-### Who should take this workshop?
+## Who should take this workshop?
 
 The workshop familiarizes existing AWS services and shows best practices for managing multi-accounts AWS environments and deploying workloads to AWS cloud.
 
@@ -41,3 +41,6 @@ The target audience may include:
 - AWS Account Administrators
 
 The provided information is beneficial to all people involved with cloud engagements as this workshop outlines basic principles of establishing best practices for daily AWS usage.
+
+[superwerker]: https://github.com/superwerker/superwerker
+[aws quick start]: https://aws.amazon.com/quickstart/architecture/superwerker/

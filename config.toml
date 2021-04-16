@@ -15,9 +15,9 @@ enableEmoji = true
   # See the config.toml file from this documentation site to have an example.
   #editURL = ""
   # Author of the site, will be used in meta information
-  author = "James Bland"
+  author = "superluminar GmbH"
   # Description of the site, will be used in meta information
-  description = "AWS Modernization Workshop"
+  description = "The superwerker open source solution by AWS Advanced Partners kreuzwerker and superluminar automates the setup of an AWS Cloud environment with prescriptive best practices. It enables startups and SMBs to focus on their core business - by saving setup and maintenance time and money."
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar
@@ -45,34 +45,24 @@ enableEmoji = true
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]] 
-name = "<i class='fas fa-graduation-cap'></i> Modernization Workshops"
-url = "https://awsworkshop.io"
+name = "<i class='fas fa-lightbulb'></i> superwerker: GitHub"
+url = "https://github.com/superwerker/superwerker"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i> AWS Builders Library"
-url = "https://aws.amazon.com/builders-library/"
+name = "<i class='fas fa-lightbulb'></i> superwerker: AWS Quick Start"
+url = "https://aws.amazon.com/quickstart/architecture/superwerker/"
 weight = 11
 
 [[menu.shortcuts]]
-name = "<i class='far fa-lightbulb'></i> Modernization with AWS"
-url = "https://aws.amazon.com/blogs/modernizing-with-aws/"
-weight = 20
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard-teacher'></i> EKS Workshop"
-url = "https://eksworkshop.com/"
+name = "<i class='far fa-lightbulb'></i> superluminar GmbH"
+url = "https://superluminar.io"
 weight = 21
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard-teacher'></i> ECS Workshop"
-url = "https://ecsworkshop.com/"
-weight = 22
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard-teacher'></i> App Mesh Workshop"
-url = "https://www.appmeshworkshop.com/"
-weight = 23
+name = "<i class='far fa-lightbulb'></i> kreuzwerker GmbH"
+url = "https://kreuzwerker.de/"
+weight = 20
 
 [markup]
   defaultMarkdownHandler = "blackfriday"

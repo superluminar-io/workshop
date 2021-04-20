@@ -36,7 +36,7 @@ To create a new account, we need to perform the following steps:
 1. Go to the [Control Tower Management Console](https://eu-central-1.console.aws.amazon.com/controltower/home/dashboard?region=eu-central-1)
 1. Select “Account factory” from the navigation bar
 1. Click on “Enroll account”
-1. Fill in the details and make sure to use the new OU
+1. Fill in the details and make sure to use the new OU (keep in mind: The new OU is only visible here if it was created or enrolled via Contol Tower)
 1. Click on “Enroll account” to start the account creation process
 
 [Screenshots account creation]

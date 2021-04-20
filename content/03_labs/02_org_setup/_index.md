@@ -15,13 +15,12 @@ In this lab we are going to create a first organizational unit. We will later us
 All operations concerning AWS Organizations must be made from the organizations root account. To create a new OU we have to do the following steps:
 
 1. Log into the organizations root account
-1. Open the [AWS Organizations Console](https://console.aws.amazon.com/organizations/v2/home/)
-1. Click on “AWS accounts” in navigation bar
-1. Select the “Root” OU from the list of OUs
-1. Scroll down to the list of “Childrens” and select “Create new” from the “Actions” menu
-1. Choose a name for the OU (e.g. Workloads_Test) and create it
+1. Go to the [Control Tower Management Console](https://eu-central-1.console.aws.amazon.com/controltower/home/dashboard?region=eu-central-1)
+1. Click on "Organizational units" in navigation bar
+1. Click on the "Add an OU" button
+1. Choose a name for the OU (e.g. Workloads_Test) and create it by clicking the "Add" button
 
-[Screenshots from V2 Org console]
+[Screenshots]
 
 Now that we have a dedicated OU, we can create our first workload account.
 

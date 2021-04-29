@@ -1,7 +1,7 @@
 ---
 title: "Labs"
 chapter: true
-weight: 30
+weight: 50
 ---
 
 # Labs

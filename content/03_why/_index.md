@@ -27,4 +27,4 @@ There are a good deal of information on this topic. Here is a small list, if you
 
 - [The reasons why you want an AWS multi-account strategy](https://kreuzwerker.de/post/AWS-multi-account-strategies)
 - [Advantages of AWS Multi-Account Architecture](https://ruempler.eu/2017/07/09/advantages-aws-multi-account-architecture/)
-- [Establishing your best practice AWS environment](https://aws.amazon.com/organizations/getting-started/best-practices/)
+- [AWS whitepaper and guidance on multi-account setups](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html)

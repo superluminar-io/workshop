@@ -2,6 +2,7 @@
 title: "superwerker Installation"
 chapter: true
 weight: 20
+alias: why
 ---
 
 # superwerker setup
@@ -46,4 +47,4 @@ Now you have to wait until the CloudFormation stacks are created successfully.
 
 [Screenshot, all green CloudFormation Stacks]
 
-Once this is done your superwerker setup is ready, and you can start configuring single sign-on via AWS Single Sign-On.
+While we are waiting for the installation to finish, you can read some thoughts about [Why we think a multi account setup is important](/03_why.html) and some [notes about the costs](/04_costs.html) of a superwerker installation.

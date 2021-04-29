@@ -16,10 +16,10 @@ So, why do we recommend a multi account setup even for such small environments? 
 
 There are many good reasons to have a multi account setup with AWS. The most important one are:
 
-- **Blast radius reduction**. If something bad happens, it usually affects only one account.
-- **Cost attribution**. The simplest way to split AWS spendings is by distributing workloads over multiple accounts.
-- **Least privilege made easy**. AWS accounts are a privilege boundary in AWS, and it’s easy to limit the access e.g. for a team to their account.
-- **Support innovation**. It is easy for developers to try out new features if they have their “playground” account and know they can’t interfere with production workloads.
+- **Blast radius reduction**: If something bad happens, it usually affects only one account.
+- **Cost attribution**: The simplest way to split AWS spendings is by distributing workloads over multiple accounts.
+- **Least privilege made easy**: AWS accounts are a privilege boundary in AWS, and it’s easy to limit the access e.g. for a team to their account.
+- **Support innovation**: It is easy for developers to try out new features if they have their “playground” account and know they can’t interfere with production workloads.
 
 ## Further reads
 

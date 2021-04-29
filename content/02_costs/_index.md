@@ -8,7 +8,7 @@ weight: 25
 
 superwerker itself is free and open source under an [MIT licence](https://github.com/superwerker/superwerker/blob/main/LICENSE.md). Costs may be incurred by the AWS services you set up. Smaller set-ups and test set-ups cost less than $10/month.
 
-A goal of superwerker is to provide you with a set of well configured AWS services. These services come with their normal pricing depending on the AWS region you choose.
+A goal of superwerker is to provide you with a set of well configured AWS services. These services come with their normal pricing depending on the AWS region you choosepac.
 
 Some AWS services that will be configured by superwerker are:
 

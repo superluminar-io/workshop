@@ -23,6 +23,6 @@ The goal of [superwerker] is to provide you with a set of well-configured AWS se
 
 > As a rule of thumb: The costs for these services will grow with the number of AWS accounts and the number of workloads (EC2 instances, databases, Lambda functions, …) you use.
 
-[superwerker]: https://github.com/superwerker/superwerker
-
 Given the benefits of a multi-account AWS environment, this is a justifiable invest.
+
+[superwerker]: https://github.com/superwerker/superwerker

@@ -6,11 +6,9 @@ weight: 50
 
 # Labs
 
-The following labs showcase common task that needs to be done when working with AWS environments.
+The available labs will guide you through typical tasks needed when managing a multi-account AWS environment. Most tasks have take two different perspectives:
 
-The tasks take two different perspectives:
+- **Platform Owner:** responsible for the whole AWS environment
+- **Workload Owner:** facillitates AWS to run specific workloads
 
-- the **platform owner**, who is responsible for the whole AWS environment
-- the **workload owner**, who facillitates the platform to run specific workloads
-
-Even though the labs are aimed at different audiences, some of them build on each other and must therefore be done in a specific order.
+> Even though the labs aim at different audiences, they are built on each other and should therefore be accomplished in the provided structure.

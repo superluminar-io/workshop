@@ -6,25 +6,31 @@ weight: 30
 
 # Why do I need all this?
 
-## Do we really need superwerker from the beginning?
+Managing a cloud infrastructure consisting of multiple AWS accounts is one of the most important but also complex topics for Well-Architected AWS environments. [superwerker] helps with establishing the baseline for your AWS landscape.
 
-Most organizations start small on AWS. Usually, there is a bit of prototyping or a single application should be migrated. There are not many moving parts involved and everything is happening in a single AWS account.
+## Is superwerker Needed From The Beginning?
 
-So, why do we recommend a multi account setup even for such small environments? The simple answer is: They will grow big. And when they do, it’s very hard to adjust everything to use a multi account strategy. 
+Most organizations start small on AWS. Usually, there is a bit of prototyping or a single application needs to be migrated. There are not many moving parts involved and it seems suitable to deploy everything into one single AWS account.
 
-## But why do we need it in the first place?
+Based on these basic scenarios, many people question the need of superwerker and a structured approach to a multi-account AWS environment when getting started with AWS. Based on the experiences with complex architectures on AWS, it's guaranteed that previous _small project_ will get more complex as they evolve. Therefore, ensuring best-practices for AWS from the direct beginning is highly recommended.
 
-There are many good reasons to have a multi account setup with AWS. The most important one are:
+## Multi-Account AWS Environments?
 
-- **Blast radius reduction**: If something bad happens, it usually affects only one account.
-- **Cost attribution**: The simplest way to split AWS spendings is by distributing workloads over multiple accounts.
-- **Least privilege made easy**: AWS accounts are a privilege boundary in AWS, and it’s easy to limit the access e.g. for a team to their account.
-- **Support innovation**: It is easy for developers to try out new features if they have their “playground” account and know they can’t interfere with production workloads.
+There are many good reasons to have a multi-account environment with AWS:
 
-## Further reads
+- **Reduced Blast Radius** \
+   Using multiple AWS accounts, you can limit the blas radius of potential threats and incidents. If bad things happen, they only affect one AWS account.
+- **Costs Attribution (per default)** \
+   The simplest way to split AWS spendings is by distributing workloads over multiple accounts.
+- **Least Privilege (per default)** \
+  AWS accounts are a privilege boundary; with multiple accounts, it’s easy to limit access to resources in AWS.
+- **Foster Adaption & Innovation** \
+  Based on the previous benefits, you lower the burden for people at your organization to get started with AWS or build new features, applications, or prototypes.
 
-There are a good deal of information on this topic. Here is a small list, if you want to know more:
+### Further reads
 
 - [The reasons why you want an AWS multi-account strategy](https://kreuzwerker.de/post/AWS-multi-account-strategies)
 - [Advantages of AWS Multi-Account Architecture](https://ruempler.eu/2017/07/09/advantages-aws-multi-account-architecture/)
 - [AWS whitepaper and guidance on multi-account setups](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html)
+
+[superwerker]: https://github.com/superwerker/superwerker

@@ -11,11 +11,13 @@ alias: why
 
 Getting started with [superwerker] is simple: You only need to deploy a single AWS CloudFormation template into an existing AWS account. Head over to the [superwerker repository on GitHub], choose the [GitHub releases], and pick the most recent version to get started.
 
+![GitHub releases for superwerker](/screenshots/installation/github-releases.png)
+
 ## AWS CloudFormation
 
 After clicking on the **Quick Install** link on GitHub, you will be redirected to the AWS Management Console to deploy the CloudFormation template for [superwerker].
 
-[Screenshot]
+![CloudFormation for superwerker](/screenshots/installation/cloudformation-start.png)
 
 If you are not already signed in to your AWS Account, you will be asked for your login information.
 
@@ -25,11 +27,11 @@ The only important configurations for this workshop are the domain name and sub 
 
 If your company's primary domain is `example.com` you can consider a domain like `aws.example.com` for using with superwerker. The DNS configuration is split up into two input fields: one for the domain, and one for the intended sub domain.
 
-[Screenshot of feature list?]
+![CloudFormation for superwerker](/screenshots/installation/domain-empty.png)
 
 **Warning:** Please ensure you have access to the DNS configuration of your configured domain! Without the needed settings, you cannot continue this workshop and the installation of superwerker!
 
-[Screenshot with filled domain input field]
+![CloudFormation for superwerker](/screenshots/installation/domain-filled.png)
 
 Once you entered the domain information, scroll down to the bottom of the page and acknowledge that AWS CloudFormation needs to create IAM resources; such as Roles and Policies.
 
@@ -41,7 +43,7 @@ With clicking **Create Stack**, you can now start the installation!
 
 During the installation process, [superwerker] creates a **Route53 hosted zone** for the domain and sub-domain you configured prior starting the installation. Along with this hosted zone, Route53 creates a set of nameservers the be used for your domain.
 
-[superwerker] uses **Nested CloudFormation Stacks** to organize and bundle the included components. To figure out, if the needed Route53 resources have been created, check the status of the `superwerker-Root-Mail` stack in AWS CloudFormation.
+[superwerker] uses **Nested CloudFormation Stacks** to organize and bundle the included components. To figure out, if the needed Route53 resources have been created, check the status of the `superwerker-RootMail` stack in AWS CloudFormation.
 
 [Screenshot of ready Cfn Stack]
 
@@ -59,7 +61,7 @@ The installation process of [superwerker] waits until you have finished setting 
 
 After the installation process recognized the needed DNS configuration, the dashboard in AWS CloudWatch will reflect the correct nameservers for your domain.
 
-[Screenshot successful DNS setup]
+![CloudFormation for superwerker](/screenshots/installation/dashboard-done.png)
 
 Together with updating the dashboard, [superwerker] will continue with creating the additional resources now. The events for the stack in AWS CloudFormation show you the installation progress.
 

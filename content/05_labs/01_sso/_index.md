@@ -62,6 +62,8 @@ There are two important things to be aware of when changing the user portal URL:
 - This is a public domain, so it needs to be unique over all AWS customers
 - You can only change this URL once!
 
+![CloudFormation for superwerker](/screenshots/sso/custom-domain.png)
+
 To change the sub domain, perform these steps:
 
 1. Log in to the AWS Root Account
@@ -69,7 +71,5 @@ To change the sub domain, perform these steps:
 1. Go to the “Settings” section
 1. Click to button to customize the “User portal URL”
 1. Enter a customized sub domain
-
-[Screenshots of the process]
 
 [superwerker]: https://github.com/superwerker/superwerker

@@ -18,7 +18,12 @@ In this workshop you will install and deploy superwerker via AWS CloudFormation 
 
 You will also get to experience some typical scenarios related to maintaining larger AWS environments like:
 
-- Managing Users and Access
-- Restoring automatically created backups
+- Managing users and access with Single Sign-On
+- Organize AWS accounts within your multi-account AWS environment
 - Aggregating, organizing, and prioritizing security alerts
-- Onboarding existing AWS Accounts in your new AWS Environment
+- Managing automated backups for databases
+
+[superwerker]: https://github.com/superwerker/superwerker
+[aws quick start]: https://aws.amazon.com/quickstart/architecture/superwerker/
+[superluminar]: https://superluminar.io
+[kreuzwerker]: https://kreuzwerker.de

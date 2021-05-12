@@ -22,7 +22,6 @@ The learning objectives of this workshop are intended to familiarize users with 
 - Learn everything Managing Users and Access Through AWS Single Sign-On
 - Centralized and automated data protection with AWS Backup
 - Aggregate, organize, and prioritize security alerts with AWS Security Hub
-- Configuring cost threshold alarms with AWS Budgets
 - Monitoring and protecting your AWS accounts, workloads, and data against malicious activity, threats, and breaches with Amazon GuardDuty
 - Protect infrastructure from intentional or unintentional mistakes using Service Control Policies
 

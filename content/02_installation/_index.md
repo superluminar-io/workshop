@@ -15,7 +15,7 @@ To install [superwerker], you need to fulfil the following two prerequisites:
 1. A domain and manageable DNS settings (You can register domains with [Amazon Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html))
 ![GitHub releases for superwerker](/screenshots/installation/github-releases.png)
 
-if these in place, you can now begin the installation process.
+if these are in place, you can now begin the installation process.
 
 ## Installing superwerker
 ![CloudFormation for superwerker](/screenshots/installation/cloudformation-start.png)

@@ -16,6 +16,8 @@ Based on these basic scenarios, many people question the need of superwerker and
 
 ## Multi-Account AWS Environments?
 
+Multi-account environments enable improved security and cost outcomes. They contribute to key metrics like development and deployment velocity by retaining the technological freedom for small and independent workload teams. Managing a cloud infrastructure consisting of multiple AWS accounts is therefore one of the most important but also complex topics for Well-Architected AWS environments.
+
 There are many good reasons to have a multi-account environment with AWS:
 
 - **Reduced Blast Radius** \

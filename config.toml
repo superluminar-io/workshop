@@ -45,7 +45,12 @@ enableEmoji = true
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]] 
-name = "<i class='fas fa-lightbulb'></i> superwerker: GitHub"
+name = "<i class='fas fa-lightbulb'></i> superwerker: Website"
+url = "https://superwerker.cloud"
+weight = 1
+
+[[menu.shortcuts]] 
+name = "<i class='fas fa-lightbulb'></i> superwerker: GitHub Repository"
 url = "https://github.com/superwerker/superwerker"
 weight = 10
 

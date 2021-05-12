@@ -10,6 +10,8 @@ weight: 1
 
 Welcome to the [superwerker] hands-on workshop. superwerker is a free, open-source [AWS Quick Start] that lets you quickly set up an AWS Cloud environment following best practices for security and efficiency so you can focus on your core business.
 
+![superwerker](/images/splash.jpg)
+
 > [superwerker] is built by **AWS Advanced Partners** [superluminar] and [kreuzwerker] with decades of experience setting up and automating AWS Cloud environments.
 
 In this workshop, you will learn how to navigate in a multi-account AWS environment set up with superwerker. Companies of all sizes can benefit from deploying with superwerker. Start-ups and small-to-medium businesses can especially benefit when time-to-market and financial aspects are concerns. Regardless of company size, superwerker lets you run your business without spending excess time setting up and maintaining your AWS Cloud environment.
@@ -22,7 +24,6 @@ The learning objectives of this workshop are intended to familiarize users with 
 - Learn everything Managing Users and Access Through AWS Single Sign-On
 - Centralized and automated data protection with AWS Backup
 - Aggregate, organize, and prioritize security alerts with AWS Security Hub
-- Configuring cost threshold alarms with AWS Budgets
 - Monitoring and protecting your AWS accounts, workloads, and data against malicious activity, threats, and breaches with Amazon GuardDuty
 - Protect infrastructure from intentional or unintentional mistakes using Service Control Policies
 

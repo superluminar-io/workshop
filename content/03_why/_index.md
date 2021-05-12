@@ -29,6 +29,12 @@ There are many good reasons to have a multi-account environment with AWS:
 - **Foster Adaption & Innovation** \
   Based on the previous benefits, you lower the burden for people at your organization to get started with AWS or build new features, applications, or prototypes.
 
+## Account Structure
+
+Using [AWS Organizations], [AWS Control Tower], and custom Organization Units, you can group and organize your AWS accounts. Per default, Control Tower configures a `core` Organization Unit for the log and audit AWS accounts.
+
+![OU Structure](/images/accounts.png)
+
 ### Further reads
 
 - [The reasons why you want an AWS multi-account strategy](https://kreuzwerker.de/post/AWS-multi-account-strategies)
@@ -36,3 +42,5 @@ There are many good reasons to have a multi-account environment with AWS:
 - [AWS whitepaper and guidance on multi-account setups](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html)
 
 [superwerker]: https://github.com/superwerker/superwerker
+[aws organizations]: https://aws.amazon.com/organizations/
+[aws control tower]: https://aws.amazon.com/controltower/

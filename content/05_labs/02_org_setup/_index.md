@@ -20,7 +20,11 @@ All operations concerning AWS Organizations must be made from the AWS Root Accou
 1. Use the "Add an OU" button to create a new Organization Unit
 1. Choose a unique name for the OU (e.g. `workloads`) and click "Add"
 
-[Screenshots]
+![CloudFormation for superwerker](/screenshots/org/ou-list.png)
+
+![CloudFormation for superwerker](/screenshots/org/ou-create.png)
+
+![CloudFormation for superwerker](/screenshots/org/ou-pending.png)
 
 When the newly created Organization Unit is configured in Control Tower it's time to create the first AWS account for the intended workload.
 
@@ -39,6 +43,12 @@ Create a new AWS account:
 1. Provide the needed details and select the `workloads` OU
 1. Click on “Enroll account” to start the account creation process
 
-[Screenshots account creation]
+![CloudFormation for superwerker](/screenshots/org/account-factory.png)
+
+![CloudFormation for superwerker](/screenshots/org/account-create.png)
+
+![CloudFormation for superwerker](/screenshots/org/account-create-filled.png)
 
 It will take some time until the new account is ready. You can check the status on the "Accounts" overview of the AWS Control Tower console.
+
+![CloudFormation for superwerker](/screenshots/org/account-pending.png)

@@ -8,21 +8,19 @@ weight: 10
 
 ## Goal Of The Workshop
 
-After finishing this workshop, you know everything about the foundational concepts to manage a multi-account AWS environment.
+After finishing this workshop, you will understand the fundamental concepts that are required to set up and maintain a secure multi-account AWS environment.
 
-You will start with installing [superwerker]; an official [AWS Quick Start] solotion and automated gold-standard deployment in the AWS Cloud. Based on best practices and experiences from years of consulting, [superluminar] and [kreuzwerker] created the [superwerker] open-source solution.
+You will install [superwerker]; an official [AWS Quick Start] solution that automates the deployment of AWS services in the cloud. Superwerker has been developed by [superluminar] and [kreuzwerker] to follow best practices for security and efficiency based on their decades of experience as cloud computing consultants.
 
-## High-Level Overview
+## Workshop overview
 
-Getting started with [superwerker] is simple: You only need to deploy a single AWS CloudFormation template into an existing AWS account. Afterwards, the main goal of the workshop is to teach you how to facilitate superwerker for maintaining a secure and sustainable AWS environment in a best practice-driven fashion.
+In this workshop you will install and deploy superwerker via AWS CloudFormation into an existing AWS account. We will then guide you through the decisions and service configurations that [superwerker] performs for you and you will learn why they are in place.
 
-When the installation process is done, this workshop will guide you through the decisions and service configurations [superwerker] implies for you and you will learn why they are in place.
-
-Additionally, uou will walk through some typical scenarios when it comes to maintaining larger AWS environments like:
+You will also get to experience some typical scenarios related to maintaining larger AWS environments like:
 
 - Managing Users and Access
-- Restore automatically created backups
-- Aggregate, organize, and prioritize security alerts
+- Restoring automatically created backups
+- Aggregating, organizing, and prioritizing security alerts
 - Onboarding existing AWS Accounts in your new AWS Environment
 
 ## AWS Environments

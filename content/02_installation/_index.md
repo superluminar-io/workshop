@@ -7,6 +7,15 @@ alias: why
 
 # superwerker setup
 
+## Prerequisites
+
+To install [superwerker], you need to fulfil the following two prerequisites:
+
+1. A dedicated AWS Account with administrative access ([sign up here](https://portal.aws.amazon.com/billing/signup))
+2. A domain and manageable DNS settings (You can register domains with [Amazon Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html))
+
+When you have these in place, you can begin with [installing superwerker].
+
 ## Installing superwerker
 
 Getting started with [superwerker] is simple: You only need to deploy a single AWS CloudFormation template into an existing AWS account. Head over to the [superwerker repository on GitHub], choose the [GitHub releases], and pick the most recent version to get started.

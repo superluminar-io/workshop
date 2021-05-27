@@ -4,29 +4,9 @@ chapter: true
 weight: 10
 ---
 
-# Single Sign-On
+# AWS Single Sign-On
 
-By now, you signed in to your AWS environment using the root users email address and password. This is considered a bad practices and [very insecure](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html).
-
-Therefore, the first step for securing your AWS environment is to configure the root user with multi-factor authentication and enable yourself to access your AWS Account using AWS Single Sign-On.
-
-## MFA for the root user
-
-The root user of an AWS Account has the broadest permissions possible. It is a huge security risk to leave this account only be secured with a single factor (a username and a password). To mitigate this risk, you need to enable multi-factor authentication for the root user with the following steps:
-
-1. Log in to your AWS Account with your root user's email address and password
-1. Access the [Security Credentials](https://console.aws.amazon.com/iam/home#/security_credentials$mfa) section of the IAM console
-1. Click on the blue “Activate MFA” button
-1. Select “Virtual MFA device”
-1. Use a MFA application like [Google Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator) or [Authy](https://authy.com/) to scan the QR code
-1. Finish the setup by entering two consecutive MFA codes
-1. Click the “activate MFA” button
-
-[Screenshots of the process]
-
-## AWS Single Sign-On
-
-After securing your root account, it is time to enable login via AWS Single Sign-On.
+After [securing your root account](/05_labs/00_root.html), it is time to enable login via AWS Single Sign-On.
 
 ### Basics
 

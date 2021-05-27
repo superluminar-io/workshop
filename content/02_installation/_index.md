@@ -1,5 +1,5 @@
 ---
-title: "superwerker Installation"
+title: "Installation"
 chapter: true
 weight: 20
 alias: why

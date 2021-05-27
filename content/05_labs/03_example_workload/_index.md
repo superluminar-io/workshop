@@ -6,7 +6,7 @@ weight: 30
 
 # Example Workload
 
-This lab covers a basic example workload (using an S3 bucket) in the AWS account created in [the previous lab](/05_labs/02_org_setup.html).
+This lab covers a basic example workload (using an S3 bucket) in the AWS account created in [the previous lab](/05_labs/02_org_setup.html). 
 
 ## Workload
 

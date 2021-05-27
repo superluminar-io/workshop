@@ -6,15 +6,15 @@ weight: 10
 
 # Securing your AWS environment
 
-By now, you signed in to your AWS environment using the root users email address and password. This is considered a bad practices and [very insecure](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html).
+To this point, you signed into your AWS environment using the root user's email address and password. This is considered bad practice and [very insecure](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html).
 
 Therefore, the first step for securing your AWS environment is to configure the root user with multi-factor authentication and enable yourself to access your AWS Account using AWS Single Sign-On.
 
 ## MFA for the root user
 
-The root user of an AWS Account has the broadest permissions possible. It is a huge security risk to leave this account only be secured with a single factor (a username and a password). To mitigate this risk, you need to enable multi-factor authentication for the root user with the following steps:
+The root user of an AWS Account has the broadest permissions possible. It is a huge security risk to leave this account only secured with a single factor (a username and a password). To mitigate this risk, you need to enable multi-factor authentication for the root user with the following steps:
 
-1. Log in to your AWS Account with your root user's email address and password
+1. Log into your AWS Account with your root user's email address and password
 1. Access the [Security Credentials](https://console.aws.amazon.com/iam/home#/security_credentials$mfa) section of the IAM console
 1. Click on the blue “Activate MFA” button
 1. Select “Virtual MFA device”
@@ -30,7 +30,7 @@ After securing your root account, it is time to enable login via AWS Single Sign
 
 ### Basics
 
-The AWS Single Sign-On service allows you to create new user accounts that only exist in AWS SSO as well as connecting it to an existing identity provider like Googles G Suite or Azure AD.
+The AWS Single Sign-On service allows you to create new user accounts that only exist in AWS SSO as well as connecting it to an existing identity provider like Google G Suite or Azure AD.
 
 > To keep the workshop simple, we reference the AWS documentation on [how to use G Suite as an external identity provider for AWS SSO](https://aws.amazon.com/blogs/security/how-to-use-g-suite-as-external-identity-provider-aws-sso/) as well as the generic documentation on [how to manage your identity source with AWS SSO](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source.html) here.
 

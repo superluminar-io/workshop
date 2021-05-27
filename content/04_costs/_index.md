@@ -6,9 +6,9 @@ weight: 40
 
 # Costs of a superwerker setup
 
-The installation and usage of [superwerker] is free of charge! The project and all included components is are available as open-source and provided using the [MIT licence](https://github.com/superwerker/superwerker/blob/main/LICENSE.md).
+The installation and usage of [superwerker] is free of charge! The project and all included components are available as open-source and provided using the [MIT licence](https://github.com/superwerker/superwerker/blob/main/LICENSE.md).
 
-> Of course, costs will be incurred by the AWS services [superwerker] sets up. For a smaller environments, the monthlys costs will be less than $10.
+> Of course, costs will be incurred by the AWS services [superwerker] sets up. For smaller environments, the monthly costs will be less than $10.
 
 ## Included Services
 

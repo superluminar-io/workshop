@@ -21,7 +21,7 @@ if these are in place, you can now begin the installation process.
 Getting started with [superwerker] is simple: You only need to deploy a single AWS CloudFormation template into an existing AWS account.
 
 1. Sign into your AWS account with you root user email and password if you are not already logged in.
-1. Select to AWS region in which you want to deploy superwerker.
+1. Select the AWS region in which you want to deploy superwerker.
 1. Access the [GitHub releases for superwerker](https://github.com/superwerker/superwerker/releases)
 1. Click on **Quick install** for the latest version of [superwerker].
 
@@ -55,7 +55,7 @@ If your company's primary domain is `example.com` you can consider a domain like
 
 ## DNS Configuration
 
-During the installation process, [superwerker] creates a **Route53 hosted zone** for the domain and sub domain you configured prior starting the installation process. Along with the hosted zone, Route53 created a set of nameservers to be used for your domain.
+During the installation process, [superwerker] creates a **Route53 hosted zone** for the domain and sub domain you configured prior to starting the installation process. Along with the hosted zone, Route53 created a set of nameservers to be used for your domain.
 
 [superwerker] uses **Nested CloudFormation Stacks** to organize and bundle the included components. To figure out, if the needed Route53 resources have been created, check the status of the `superwerker-RootMail` stack in AWS CloudFormation.
 
@@ -75,11 +75,11 @@ The installation process of [superwerker] waits until you have finished setting 
 
 ## Finish superwerker setup
 
-After the installation process recognized the needed DNS configuration, the dashboard in AWS CloudWatch will reflect the correct nameservers for your domain.
+After the installation process has recognized the required DNS configuration, the dashboard in AWS CloudWatch will reflect the correct nameservers for your domain.
 
 ![CloudFormation for superwerker](/screenshots/installation/dashboard-done.png)
 
-Together with updating the dashboard, [superwerker] will continue with creating the additional resources now. The events for the stack in AWS CloudFormation show you the installation progress.
+In addition to updating the dashboard, [superwerker] will now continue to create the rest of the stack's resources. The events for the stack in AWS CloudFormation show you the installation progress.
 
 [Screenshot in-progress CFN stack]
 
@@ -88,7 +88,7 @@ While the remaining resources get created, you can head over to the next steps i
 - [Why do you need a multi-account AWS environment?](/03_why.html)
 - [What costs occur after installing superwerker?](/04_costs.html)
 
-Make sure to head back at CloudFormation regularly, to check if the [superweker] stack has been created successfully.
+Make sure to head back to CloudFormation regularly, to check if the [superweker] stack has been created successfully.
 
 [superwerker repository on github]: https://github.com/superwerker/superwerker
 [github releases]: https://github.com/superwerker/superwerker/releases

@@ -1,16 +1,16 @@
 ---
-title: "Single Sign-On"
+title: "Secure Access to AWS"
 chapter: true
 weight: 10
 ---
 
-# AWS Single Sign-On
+# Securing your AWS environment
 
 After [securing your root account](/05_labs/00_root.html), it is time to enable login via AWS Single Sign-On.
 
 ### Basics
 
-The AWS Single Sign-On service allows you to create new user accounts that only exist in AWS SSO as well as connecting it to an existing identity provider like Googles G Suite or Azure AD.
+The AWS Single Sign-On service allows you to create new user accounts that only exist in AWS SSO as well as connecting it to an existing identity provider like Google G Suite or Azure AD.
 
 > To keep the workshop simple, we reference the AWS documentation on [how to use G Suite as an external identity provider for AWS SSO](https://aws.amazon.com/blogs/security/how-to-use-g-suite-as-external-identity-provider-aws-sso/) as well as the generic documentation on [how to manage your identity source with AWS SSO](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source.html) here.
 

@@ -6,11 +6,11 @@ weight: 30
 
 # Example Workload
 
-This lab covers a basic example workload (using an S3 bucket) in the AWS account created in [the previous lab](/05_labs/02_org_setup.html).
+This lab covers a basic example workload (using an S3 bucket) in the AWS account created in [the previous lab](/05_labs/02_org_setup.html). 
 
 ## Workload
 
-To showcase benefits of a unified AWS environment, you will create an S3 bucket with the default configuration and intentional mistakes. The bucket could - for instance - be used to store internal files or public assets for a static website.
+To showcase the benefits of a unified AWS environment, you will create an S3 bucket with the default configuration and intentional mistakes. The bucket could - for instance - be used to store internal files or public assets for a static website.
 
 Using this example, a potential workload owner needs to be notified, that an insecure configuration of an AWS resource was applied. Regardless if the configuration is accidental or intended, using [superwerker] will ensure the same level of security and configuration for AWS resources across your AWS accounts.
 
@@ -33,7 +33,7 @@ Now that you have a new S3 bucket without server-side encryption, let’s check 
 
 ## Security Notification via Security Hub
 
-With using [superwerker], AWS Security Hub and AWS Config are enabled by default. These services make sure your resources in AWS match the required configuration schema:
+When using [superwerker], AWS Security Hub and AWS Config are enabled by default. These services make sure your resources in AWS match the required configuration schema:
 
 - AWS Config checks continuously all AWS resource to match a set of rules
 - AWS Security Hub aggregate all security-related notifications in a dashboard

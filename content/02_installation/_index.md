@@ -20,8 +20,8 @@ if these are in place, you can now begin the installation process.
 
 Getting started with [superwerker] is simple: You only need to deploy a single AWS CloudFormation template into an existing AWS account.
 
-1. Sign into your AWS account if you are not already logged in.
-1. Select to AWS region in which you want to deploy superwerker.
+1. Sign into your AWS account with your root user email and password if you are not already logged in.
+1. Select the AWS region in which you want to deploy superwerker.
 
 ![GitHub releases for superwerker](/screenshots/installation/aws-signin.png)
 
@@ -63,7 +63,7 @@ If your company's primary domain is `example.com` you can consider a domain like
 
 ## DNS Configuration
 
-During the installation process, [superwerker] creates a **Route53 hosted zone** for the domain and sub domain you configured prior starting the installation process. Along with the hosted zone, Route53 created a set of nameservers to be used for your domain.
+During the installation process, [superwerker] creates a **Route53 hosted zone** for the domain and sub domain you configured prior to starting the installation process. Along with the hosted zone, Route53 created a set of nameservers to be used for your domain.
 
 [superwerker] uses **Nested CloudFormation Stacks** to organize and bundle the included components. To figure out, if the needed Route53 resources have been created, check the status of the `superwerker-RootMail` stack in AWS CloudFormation.
 
@@ -87,7 +87,7 @@ The installation process of [superwerker] waits until you have finished setting 
 
 ## Finish superwerker setup
 
-After the installation process recognized the needed DNS configuration, the dashboard in AWS CloudWatch shows a confirmation message.
+After the installation process has recognized the required DNS configuration, the dashboard in AWS CloudWatch shows a confirmation message.
 
 ![CloudFormation for superwerker](/screenshots/installation/dashboard-done.png)
 
@@ -99,11 +99,11 @@ Now, the [superwerker] installation process will continue with creating the addi
 
 ![CloudFormation for superwerker](/screenshots/installation/cloudformation-waiting.png)
 
-
 While the remaining resources get created, you can head over to the next steps in this workshop:
 
 - [Why do you need a multi-account AWS environment?](/03_why.html)
 - [What costs occur after installing superwerker?](/04_costs.html)
+
 
 Make sure to head back at CloudFormation regularly, to check if the [superwerker] stack has been created successfully.
 

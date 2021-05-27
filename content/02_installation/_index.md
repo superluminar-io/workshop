@@ -22,10 +22,14 @@ Getting started with [superwerker] is simple: You only need to deploy a single A
 
 1. Sign into your AWS account with your root user email and password if you are not already logged in.
 1. Select the AWS region in which you want to deploy superwerker.
+
+![GitHub releases for superwerker](/screenshots/installation/aws-signin.png)
+
 1. Access the [GitHub releases for superwerker](https://github.com/superwerker/superwerker/releases)
 1. Click on **Quick install** for the latest version of [superwerker].
 
 ![GitHub releases for superwerker](/screenshots/installation/github-releases.png)
+
 
 After clicking on the **Quick Install** link on GitHub, you will be redirected to the AWS Management Console to deploy the CloudFormation template for [superwerker].
 
@@ -51,6 +55,10 @@ If your company's primary domain is `example.com` you can consider a domain like
 
 ![CloudFormation for superwerker](/screenshots/installation/domain-filled.png)
 
+![CloudFormation for superwerker](/screenshots/installation/cloudformation-confirm-iam.png)
+
+![CloudFormation for superwerker](/screenshots/installation/cloudformation-started.png)
+
 > **Further reading:** creating IAM Resources via CloudFormation see [Acknowledging IAM resources in AWS CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#using-iam-capabilities).
 
 ## DNS Configuration
@@ -59,36 +67,45 @@ During the installation process, [superwerker] creates a **Route53 hosted zone**
 
 [superwerker] uses **Nested CloudFormation Stacks** to organize and bundle the included components. To figure out, if the needed Route53 resources have been created, check the status of the `superwerker-RootMail` stack in AWS CloudFormation.
 
-[Screenshot of ready Cfn Stack]
+![CloudFormation for superwerker](/screenshots/installation/cloudformation-rootmail-progress.png)
+
+Until the needed DNS settings are configured, the CloudFormation Stack will wait with a `CREATE_IN_PROGRESS` status. To retrieve the needed DNS settings, check the status of the `superwerker-LivingDocumentation` Stack in AWS CloudFormation.
+
+![CloudFormation for superwerker](/screenshots/installation/cloudformation-documentation-ready.png)
 
 When the stack is ready, use the search bar in the console to go to AWS CloudWatch. On the menu on the left side of the CloudWatch console, click `Dashboards`. You will find that superwerker has created a custom dashboard for you, named superwerker. Click on the link to this dashboard.
 
-[Screenshot of CloudWatch dashboards]
+![CloudFormation for superwerker](/screenshots/installation/dashboard-overview.png)
 
 The [superwerker] dashboard maintains a [living documentation] for installation instructions, next steps, and standard operating procedures afterwards.
 
 In the “DNS Settings” section, you will find a list of nameservers. Use these servers to set up a DNS delegation for your sub domain.
 
-[Screenshot of CloudWatch dashboard for superwerker]
+![CloudFormation for superwerker](/screenshots/installation/dashboard-dns.png)
 
 The installation process of [superwerker] waits until you have finished setting up the DNS configuration. There is no need to confirm the changes, the AWS CloudFormation template will periodically check for the needed configuration and continue automatically afterwards.
 
 ## Finish superwerker setup
 
-After the installation process has recognized the required DNS configuration, the dashboard in AWS CloudWatch will reflect the correct nameservers for your domain.
+After the installation process has recognized the required DNS configuration, the dashboard in AWS CloudWatch shows a confirmation message.
 
 ![CloudFormation for superwerker](/screenshots/installation/dashboard-done.png)
 
-In addition to updating the dashboard, [superwerker] will now continue to create the rest of the stack's resources. The events for the stack in AWS CloudFormation show you the installation progress.
+The `superwerker-RootMail` stack in AWS CloudFormation will show the `CREATE_COMPLETE` status as well afterwards.
 
-[Screenshot in-progress CFN stack]
+![CloudFormation for superwerker](/screenshots/installation/cloudformation-rootmail-ready.png)
+
+Now, the [superwerker] installation process will continue with creating the additional resources. The events for the stacks in AWS CloudFormation show you the installation progress.
+
+![CloudFormation for superwerker](/screenshots/installation/cloudformation-waiting.png)
 
 While the remaining resources get created, you can head over to the next steps in this workshop:
 
 - [Why do you need a multi-account AWS environment?](/03_why.html)
 - [What costs occur after installing superwerker?](/04_costs.html)
 
-Make sure to head back to CloudFormation regularly, to check if the [superweker] stack has been created successfully.
+
+Make sure to head back at CloudFormation regularly, to check if the [superwerker] stack has been created successfully.
 
 [superwerker repository on github]: https://github.com/superwerker/superwerker
 [github releases]: https://github.com/superwerker/superwerker/releases

@@ -20,7 +20,7 @@ if these are in place, you can now begin the installation process.
 
 Getting started with [superwerker] is simple: You only need to deploy a single AWS CloudFormation template into an existing AWS account.
 
-1. Sign into your AWS account with you root user email and password if you are not already logged in.
+1. Sign into your AWS account with your root user email and password if you are not already logged in.
 1. Select the AWS region in which you want to deploy superwerker.
 1. Access the [GitHub releases for superwerker](https://github.com/superwerker/superwerker/releases)
 1. Click on **Quick install** for the latest version of [superwerker].

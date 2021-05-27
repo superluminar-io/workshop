@@ -1,5 +1,5 @@
 ---
-title: "Organizing accounts"
+title: "Account Organization"
 chapter: true
 weight: 20
 ---

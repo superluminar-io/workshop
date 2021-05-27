@@ -1,5 +1,5 @@
 ---
-title: "Signing in securely"
+title: "Secure Access to AWS"
 chapter: true
 weight: 10
 ---

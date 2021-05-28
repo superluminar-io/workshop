@@ -95,8 +95,18 @@ When selecting **Resources** on the left side, you see all resources in your AWS
 
 ![CloudFormation for superwerker](/screenshots/workload/config-resource.png)
 
+By clicking on a resource name, you are directed to the corresponding details view. Here you'll find all configuration rules applicable to the type of resource and the current status. As you see, the `server-side-encryption-enabled` rule is now `Compliant`.
+
+![CloudFormation for superwerker](/screenshots/workload/config-details.png)
+
 On the details view of the resource, you can access the **Resource Timeline** to have a deeper look at the events, changes, and compliancy status of a single resource.
 
 ![CloudFormation for superwerker](/screenshots/workload/config-timeline.png)
+
+There are still two rules with the status `Noncompliant`: **bucket-ssl-requests-only** and **bucket-logging-enabled**. Can you manage to make your S3 Bucket resource fully compliant with all configuration rules?
+
+![CloudFormation for superwerker](/screenshots/workload/config-compliant.png)
+
+![CloudFormation for superwerker](/screenshots/workload/config-compliant-timeline.png)
 
 [superwerker]: https://superwerker.cloud

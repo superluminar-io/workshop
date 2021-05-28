@@ -7,7 +7,9 @@ weight: 30
 
 # Example Workload
 
-This lab covers a basic example workload (using an S3 bucket) in the AWS account created in [the previous lab](/05_labs/02_org_setup.html). 
+This lab covers a basic example workload (using an S3 bucket) in the AWS account created in [the previous lab](/05_labs/02_org_setup.html). Select the new AWS account in the **AWS Single Sign-On** portal.
+
+![CloudFormation for superwerker](/screenshots/sso/sso-workload.png)
 
 ## Workload
 
@@ -17,10 +19,10 @@ Using this example, a potential workload owner needs to be notified, that an ins
 
 ## Create the S3 bucket
 
-To create a new S3 Bucket, use the AWS S3 Console:
+To create a new S3 Bucket, use the [AWS S3 console](https://s3.console.aws.amazon.com/s3/home).
 
-1. Use AWS Single Sign-On and access your AWS Workload Account
-1. Open the [AWS S3 console](https://s3.console.aws.amazon.com/s3/home)
+![CloudFormation for superwerker](/screenshots/workload/s3.png)
+
 1. Click the orange “Create bucket” button
 1. Choose a name and a region for the bucket.\
    _The bucket name needs to be unique (not just in your AWS account)_
@@ -28,37 +30,53 @@ To create a new S3 Bucket, use the AWS S3 Console:
    _Especially: do not enable “Server-side encryption”._
 1. Create the bucket by clicking the “Create bucket” button
 
-[Screenshots of bucket create form]
+![CloudFormation for superwerker](/screenshots/workload/s3-create.png)
 
-Now that you have a new S3 bucket without server-side encryption, let’s check if there are any security warnings, that can help us to mitigate this risk.
+![CloudFormation for superwerker](/screenshots/workload/s3-button.png)
+
+After the S3 bucket was created, you are redirected to the list of your bucket. This list will include the new S3 bucket.
+
+![CloudFormation for superwerker](/screenshots/workload/s3-success.png)
+
+Now that you have created a new S3 bucket without server-side encryption, let’s check if there are any security warnings, that can help us to mitigate this risk.
 
 ## Security Notification via Security Hub
 
-When using [superwerker], AWS Security Hub and AWS Config are enabled by default. These services make sure your resources in AWS match the required configuration schema:
+When using [superwerker], AWS Security Hub and AWS Config are enabled to ensure a secure baseline for all resources in your AWS accounts. These services make sure your resources in AWS match the required configuration schema:
 
 - AWS Config checks continuously all AWS resource to match a set of rules
 - AWS Security Hub aggregate all security-related notifications in a dashboard
 
-Now you need to check if the misconfiguration (_Using unencrypted S3 buckets_) was already noticed. To check the current security issues in the workload account use Security Hub:
+Now you need to check if the misconfiguration (_Using unencrypted S3 buckets_) was already noticed. To check the current security issues in the workload account use [Security Hub service console](https://eu-central-1.console.aws.amazon.com/securityhub/home?region=eu-central-1#/summary):
 
-1. Use AWS Single Sign-On and access your AWS Workload Account
-1. Open the [Security Hub console](https://eu-central-1.console.aws.amazon.com/securityhub/home?region=eu-central-1#/summary)
+![CloudFormation for superwerker](/screenshots/workload/securityhub.png)
+
 1. Select “Findings” from the navigation bar
 1. Locate the finding related to the new S3 bucket in the list \
    _It might take a couple of minutes until it appears_
 1. You can take a closer look at the finding and check out its details view
 
-[Screenshots Security Hub with S3 finding]
+![CloudFormation for superwerker](/screenshots/workload/securityhub-findings.png)
+
+## Update S3 Configuration
 
 Now that you learned where to find notifications for security issues, let’s go ahead and fix the issue.
 
-1. Use AWS Single Sign-On and access your AWS Workload Account
 1. Open the [AWS S3 console](https://s3.console.aws.amazon.com/s3/home) again
 1. Find your S3 bucket and click on its name to open the details view
+
+![CloudFormation for superwerker](/screenshots/workload/s3-details.png)
+
 1. Click on the “Properties” tab and find the “Default encryption” section
 1. Click on the “Edit” button and enable the “Server-side encryption”
 1. Save the changes
 
-[Screenshots S3 settings]
+![CloudFormation for superwerker](/screenshots/workload/s3-details-encryption.png)
+![CloudFormation for superwerker](/screenshots/workload/s3-details-encryption-save.png)
+
+
+## Security Notification via Security Hub
 
 To make sure that the problem is really fixed, you can go back to the [Security Hub console](https://eu-central-1.console.aws.amazon.com/securityhub/home?region=eu-central-1#/summary) and check that the finding no longer shows up.
+
+[superwerker]: https://superwerker.cloud

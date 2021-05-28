@@ -68,4 +68,6 @@ It will take some time until the new account is ready. You can check the status 
 
 If you used your existing email address for **AWS SSO email**, you should be able to see and access the new AWS account in the **AWS Single Sign-On** portal website now.
 
+![CloudFormation for superwerker](/screenshots/sso/sso-workload.png)
+
 [superwerker]: https://superwerker.cloud

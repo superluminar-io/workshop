@@ -5,9 +5,9 @@ chapter: true
 weight: 20
 ---
 
-# superwerker setup
+# Getting Started
 
-## Installation Prerequisites
+## Prerequisites 
 
 To install [superwerker], you need to fulfil the following two prerequisites:
 

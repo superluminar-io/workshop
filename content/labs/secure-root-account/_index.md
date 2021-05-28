@@ -5,7 +5,7 @@ chapter: true
 weight: 1
 ---
 
-# Single Sign-On
+# Secure Root Account
 
 To this point, you signed into your AWS environment using the root user's email address and password. This is considered bad practice and [very insecure](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html).
 

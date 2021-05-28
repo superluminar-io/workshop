@@ -5,7 +5,7 @@ chapter: true
 weight: 20
 ---
 
-# AWS Organizations
+# Account Organization
 
 When using AWS Organizations, AWS Accounts are organized in Organizational Units (OUs). This allows you to manage groups of accounts as one unit. During the setup, AWS Control Tower creates two OUs per default: `Core` and `Custom` (`Sandbox` and `Security` in recent versions).
 

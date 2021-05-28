@@ -7,11 +7,11 @@ weight: 10
 
 # Overview
 
+You will install [superwerker]; an official [AWS Quick Start] solution that automates the deployment of AWS services in the cloud. Superwerker has been developed by [superluminar] and [kreuzwerker] to follow best practices for security and efficiency based on their decades of experience as cloud computing consultants.
+
 ## Goal Of The Workshop
 
 After finishing this workshop, you will understand the fundamental concepts that are required to set up and maintain a secure multi-account AWS environment.
-
-You will install [superwerker]; an official [AWS Quick Start] solution that automates the deployment of AWS services in the cloud. Superwerker has been developed by [superluminar] and [kreuzwerker] to follow best practices for security and efficiency based on their decades of experience as cloud computing consultants.
 
 ## Workshop overview
 

@@ -5,7 +5,7 @@ chapter: true
 weight: 10
 ---
 
-# Securing your AWS environment
+# Secure Access to AWS
 
 After [securing your root account](/labs/secure-root-account.html), it is time to enable login via AWS Single Sign-On.
 

@@ -5,11 +5,11 @@ chapter: true
 weight: 30
 ---
 
-# Why do I need all this?
+# superwerker benefits
 
 Managing a cloud infrastructure consisting of multiple AWS accounts is one of the most important but also complex topics for Well-Architected AWS environments. [superwerker] helps to establish the baseline for your AWS landscape.
 
-## Is superwerker Needed From The Beginning?
+## Is this Needed From The Start?
 
 Most organizations start small on AWS. Usually, there is a bit of prototyping or a single application needs to be migrated. There are not many moving parts involved and it seems suitable to deploy everything into one single AWS account.
 

@@ -5,7 +5,7 @@ chapter: true
 weight: 40
 ---
 
-# Costs of a superwerker setup
+# superwerker costs
 
 The installation and usage of [superwerker] is free of charge! The project and all included components are available as open-source and provided using the [MIT licence](https://github.com/superwerker/superwerker/blob/main/LICENSE.md).
 

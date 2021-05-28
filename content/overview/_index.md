@@ -1,6 +1,7 @@
 ---
 title: "Overview"
 description: "After finishing this workshop, you will understand the fundamental concepts that are required to set up and maintain a secure multi-account AWS environment."
+chapter: true
 weight: 10
 ---
 

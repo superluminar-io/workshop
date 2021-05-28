@@ -1,5 +1,6 @@
 ---
 title: "Labs"
+description: "Labs Description"
 chapter: true
 weight: 50
 ---

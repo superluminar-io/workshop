@@ -18,31 +18,56 @@ The AWS Single Sign-On service allows you to create new user accounts that only 
 
 Since you learned that you should not use your root account to do day-to-day tasks, you need a new account that satisfies this requirement. Luckily, AWS Control Tower integrates with AWS Single Sign-On and has already created an administrator account during the setup phase for you. You have received an email with an activation link for this exact account.
 
+![SSO Mail](/screenshots/sso/sso-mail.png)
+
+
 To enable the user account, accept the invitation:
 
 1. Open the email with the subject “Invitation to join AWS Single Sign-On”
 1. Read through the content
 1. Click on the “Accept Invitation” link
-1. Choose a new password and store it along with the username in a secure location
 
-You can also see the URL of your AWS Single Sign-On login. Per default, it is a random sub domain, but you will be able to customize it in the next steps.
+![SSO Password](/screenshots/sso/sso-password.png)
 
-[Screenshots of the process]
+Choose a new password and store it along with the username in a secure location; this will be your default way to access your AWS account from now on. After signing in with your email address and the password, you are redirected to the user portal of the AWS Single Sign-On Service.
 
-Together with the URL of your AWS Single Sign-On service and the new user account, you can access your AWS account without the need of the root user account.
+### Single Sign-On Portal
+
+From now on, you do not need to use the root user anymore to access your existing AWS accounts. With the URL in the invitation mail, you can access all AWS accounts your user account has access to.
+
+![SSO Password](/screenshots/sso/sso-portal.png)
+
+When getting started with [superwerker] and AWS Control Tower, you should be able to access three AWS accounts: Your previously created AWS account, an account called _Audit_, and one labeled as _Log Archive_.
+
+![SSO Password](/screenshots/sso/sso-portal-accounts.png)
+
+Per default, the URL for your Single Sign-On portal it is a random sub domain, but you can customize this using the AWS Management Console for your AWS management account.
+
 
 ### Custom Login URL
 
-To make the usage of AWS Single Sign-On more convenient, AWS supports changing the custom sub domain for the login page.
+To make the usage of AWS Single Sign-On more convenient, you should customize the URL for your Single Sign-On portal. The configuration is available in your previously created AWS account. After installing [superwerker] and enabling AWS Control Tower, this AWS account is now the **AWS Management Account** for your **AWS Organization**.
 
-> The AWS Single Sign-On service is - as most AWS services - bound to a specific AWS region for a specific AWS account. To manage settings regarding your new login process, you need to access the Single Sign-On service in the AWS account and region you used to create the [superwerker] CloudFormation stack.
+Select your AWS Management Account and click on **Management Console** next to **AWSAdministratorAccess**
+
+![SSO Password](/screenshots/sso/sso-management.png)
+
+The AWS Single Sign-On service is - as most AWS services - bound to a specific AWS region for a specific AWS account. To manage settings regarding your new login process, you need to access the Single Sign-On service in the AWS account and region you used to create the [superwerker] CloudFormation stack.
+
+![SSO Password](/screenshots/sso/sso-console.png)
+
+![SSO Password](/screenshots/sso/sso-dashboard.png)
+
+Using the **Settings**, you can modify the URL for the user portal to access all their assigned AWS accounts, roles, and applications.
+
+![CloudFormation for superwerker](/screenshots/sso/custom-domain.png)
 
 There are two important things to be aware of when changing the user portal URL:
 
 - This is a public domain, so it needs to be unique over all AWS customers
 - You can only change this URL once!
 
-![CloudFormation for superwerker](/screenshots/sso/custom-domain.png)
+![CloudFormation for superwerker](/screenshots/sso/sso-change-subdomain.png)
 
 To change the sub domain, perform these steps:
 

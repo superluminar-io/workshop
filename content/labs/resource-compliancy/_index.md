@@ -1,11 +1,11 @@
 ---
-title: "Example Workload"
+title: "Resource Compliancy"
 description: "Lab Description for SEO"
 chapter: true
 weight: 30
 ---
 
-# Example Workload
+# Resource Compliancy & Governance
 
 This lab covers a basic example workload (using an S3 bucket) in the AWS account created in [the previous lab](/05_labs/02_org_setup.html). Select the new AWS account in the **AWS Single Sign-On** portal.
 
@@ -75,7 +75,7 @@ Now that you learned where to find notifications for security issues, let’s go
 ![CloudFormation for superwerker](/screenshots/workload/s3-details-encryption-save.png)
 
 
-## Security Notification via Security Hub
+## Compliance Status in Security Hub
 
 To make sure that the problem is really fixed, you can go back to the [Security Hub console](https://eu-central-1.console.aws.amazon.com/securityhub/home?region=eu-central-1#/summary) and check that the finding no longer shows up. 
 

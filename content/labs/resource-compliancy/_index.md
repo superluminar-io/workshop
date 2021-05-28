@@ -7,7 +7,7 @@ weight: 30
 
 # Resource Compliancy & Governance
 
-This lab covers a basic example workload (using an S3 bucket) in the AWS account created in [the previous lab](/05_labs/02_org_setup.html). Select the new AWS account in the **AWS Single Sign-On** portal.
+This lab covers a basic example workload (using an S3 bucket) in the AWS account created in [the previous lab](/labs/account-organization.html). Select the new AWS account in the **AWS Single Sign-On** portal.
 
 ![CloudFormation for superwerker](/screenshots/sso/sso-workload.png)
 

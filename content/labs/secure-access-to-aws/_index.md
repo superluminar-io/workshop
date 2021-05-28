@@ -7,7 +7,7 @@ weight: 10
 
 # Securing your AWS environment
 
-After [securing your root account](/05_labs/00_root.html), it is time to enable login via AWS Single Sign-On.
+After [securing your root account](/labs/secure-root-account.html), it is time to enable login via AWS Single Sign-On.
 
 ### Basics
 

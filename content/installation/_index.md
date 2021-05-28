@@ -101,8 +101,8 @@ Now, the [superwerker] installation process will continue with creating the addi
 
 While the remaining resources get created, you can head over to the next steps in this workshop:
 
-- [Why do you need a multi-account AWS environment?](/03_why.html)
-- [What costs occur after installing superwerker?](/04_costs.html)
+- [Why do you need a multi-account AWS environment?](/benefits.html)
+- [What costs occur after installing superwerker?](/costs.html)
 
 
 Make sure to head back at CloudFormation regularly, to check if the [superwerker] stack has been created successfully.

@@ -7,43 +7,78 @@ weight: 40
 
 # Automated Backups
 
-This lab covers the basic functionality of the **Automated Backups** feature of [superwerker]. Using [AWS Backup], all DynamoDB tables, EBS volumes, and RDS instances are secured with daily backups.
+This lab covers the basic functionality of the **Automated Backups** feature of [superwerker]. Using [AWS Backup], all DynamoDB tables, EBS volumes, and RDS instances are secured with daily backups. Select your newly created AWS account for workloads in the **AWS Single Sign-On** portal to get started.
+
+![CloudFormation for superwerker](/screenshots/sso/sso-workload.png)
 
 ## DynamoDB
 
-To create a new DynamoDB table, use the AWS DynamoDB Console:
+To create a new DynamoDB table, use the [AWS DynamoDB console](https://console.aws.amazon.com/dynamodb/home).
 
-1. Use AWS Single Sign-On and access your AWS Workload Account
-1. Open the [AWS DynamoDB console](https://console.aws.amazon.com/dynamodb/home)
-1. Click the blue “Create table" button
+![CloudFormation for superwerker](/screenshots/backup/dynamodb.png)
+
+![CloudFormation for superwerker](/screenshots/backup/dynamodb-dashboard.png)
+
+
+1. Click the “Create table" button
 1. Choose a table name and configure at least a partition key
 1. Create the table by clicking the “Create" button
 
-[Screenshots of table create form]
+![CloudFormation for superwerker](/screenshots/backup/dynamodb-create.png)
 
-After creating the table, you need to wait a few seconds before you can add items to the table. Select the "Items" tab for your table and click "Create Item" to add items to the DynamoDB table.
+![CloudFormation for superwerker](/screenshots/backup/dynamodb-create-confirm.png)
+
+After creating the table, you need to wait a few seconds before you can add items to the table. 
+
+![CloudFormation for superwerker](/screenshots/backup/dynamodb-ready.png)
+
+When the table is ready, click on the name to view the table's details and click on the "View Items" button to list existing items in your DynamoDB table and to create new items.
+
+![CloudFormation for superwerker](/screenshots/backup/dynamodb-items.png)
+
+Using the "Create Item" button, you can add new items to your DynamoDB table.
+
+![CloudFormation for superwerker](/screenshots/backup/dynamodb-items-create.png)
+
+Select the "Items" tab for your table and click "Create Item" to add items to the DynamoDB table.
 
 ## Backup Configuration
 
-The configuration for backup frequencies, is handled with `tags` for the specific AWS resource. For every resource type supported by [superwerker], an automation creates a tag called `superwerker:backup` and sets the initial value to `daily`.
+Now that you have a custom DynamoDB table created and items stored within, you might think about the need to create backups for your data. With the **Automated Backups** feature, [superwerker] takes care of everything and you already have all configuration in place to secure your DynamoDB table.
 
-> After a short period of time, the needed tag is visible when you select the `Tags` section for your DynamoDB table.
+While you have been viewing and creating items to your DynamoDB table, [superwerker] added a tag your DynamoDB table. Open the table's details again and select the **Additional Settings** tab to see the assigned tags.
 
-Currently, you can either use `daily` as the value or disable automated backups with setting the value to `none`.
+![CloudFormation for superwerker](/screenshots/backup/dynamodb-tags.png)
 
-[Screenshot of table tags]
+The configuration for backup frequencies is configured with the value of the `superwerker:backup` tag for every tagged resource individually. For every AWS resource type supported by [superwerker], this tag is added automatically and set to the initial value of `daily`.
 
-To prevent any misconfiguration, [superwerker] uses AWS Tag Policies to enforce only supported values for the tag.
+> **Note:** Currently, you can either use `daily` as the value or disable automated backups with setting the value to `none`. To prevent any misconfiguration, [superwerker] uses AWS Tag Policies to enforce only supported values for the tag.
 
-[Screenshot of table tags error with invalid option]
+![CloudFormation for superwerker](/screenshots/backup/dynamodb-tags-failed.png)
+
+If you want to disable automated backups for a resource, set the value of the tag to `none`.
 
 ## AWS Backup
 
-With the [superwerker] configuration in place, [AWS Backup] will create daily backups of your resources and only delete them after 30 ddays.
+With the [superwerker] configuration in place, [AWS Backup] will create daily backups of your resources and only delete them after 30 ddays. You can access all information about backups in the [AWS Backup console](https://console.aws.amazon.com/backup/home?region=eu-central-1#home)
 
-> Using "Backup Plans," every day at 5am (UTC) a new backup is created. You need to wait for the next day, to see the backup listed in [AWS Backup].
+![CloudFormation for superwerker](/screenshots/backup/backup.png)
 
-[Screenshot of AWS Backup]
+Using "Backup Plans," every day at 5am (UTC) new backups for all tagged resources are created.
+
+![CloudFormation for superwerker](/screenshots/backup/backup-plans.png)
+
+> **Note:** You need to wait for the next day, to see the automated backup listed in AWS Backup.
+
+As soon as the first backup for your DynamoDB table is available, AWS Backup will list the table in the **Protected Resources**. For ensure you table is already backed up now, you can create an on-demand backup using the button in the top right corner.
+
+![CloudFormation for superwerker](/screenshots/backup/backup-on-demand.png)
+
+With a manual on-demand backup in place, your table is listed a **Protected Resource** now.
+
+![CloudFormation for superwerker](/screenshots/backup/backup-protected.png)
+
+Tomorrow, by the same time, there will be a automatically created backup for your table.
 
 [aws backup]: https://aws.amazon.com/backup/
 [superwerker]: https://superwerker.cloud

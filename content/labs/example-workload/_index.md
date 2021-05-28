@@ -77,6 +77,26 @@ Now that you learned where to find notifications for security issues, let’s go
 
 ## Security Notification via Security Hub
 
-To make sure that the problem is really fixed, you can go back to the [Security Hub console](https://eu-central-1.console.aws.amazon.com/securityhub/home?region=eu-central-1#/summary) and check that the finding no longer shows up.
+To make sure that the problem is really fixed, you can go back to the [Security Hub console](https://eu-central-1.console.aws.amazon.com/securityhub/home?region=eu-central-1#/summary) and check that the finding no longer shows up. 
+
+![CloudFormation for superwerker](/screenshots/workload/securityhub-findings-fixed.png)
+
+Using the **Filters** on top of the table of findings, you can change the selection to show `passed` findings as well and see the status of the finding changed from `FAILED` to `PASSED` after you changed the encryption setting.
+
+![CloudFormation for superwerker](/screenshots/workload/securityhub-findings-filters.png)
+
+## AWS Config
+
+The **Security Hub** works as an aggregation of findings other services. The _unexpected_ configuration of the S3 Bucket is noticed by a service called **AWS Config**. You can head over to the service in the AWS Management Console to have a deeper look.
+
+![CloudFormation for superwerker](/screenshots/workload/config.png)
+
+When selecting **Resources** on the left side, you see all resources in your AWS account monitored by AWS Config. With the filter on top, you can limit it on specific resources types: S3 Buckets for example.
+
+![CloudFormation for superwerker](/screenshots/workload/config-resource.png)
+
+On the details view of the resource, you can access the **Resource Timeline** to have a deeper look at the events, changes, and compliancy status of a single resource.
+
+![CloudFormation for superwerker](/screenshots/workload/config-timeline.png)
 
 [superwerker]: https://superwerker.cloud

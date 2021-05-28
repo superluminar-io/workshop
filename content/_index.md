@@ -4,7 +4,7 @@ description: "The superwerker open source solution by AWS Advanced Partners kreu
 weight: 1
 ---
 
-# Jumpstart for sustainable AWS environments with superwerker
+# AWS environments with superwerker
 
 ## Welcome
 

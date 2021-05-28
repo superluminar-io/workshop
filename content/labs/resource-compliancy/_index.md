@@ -109,4 +109,6 @@ There are still two rules with the status `Noncompliant`: **bucket-ssl-requests-
 
 ![CloudFormation for superwerker](/screenshots/workload/config-compliant-timeline.png)
 
+With **AWS Config**, you can use a variety of [managed rules by AWS](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html) or even create your own [custom AWS Config rules using AWS Lambda](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_develop-rules.html).
+
 [superwerker]: https://superwerker.cloud

@@ -1,6 +1,6 @@
 ---
-title: "The Why"
-chapter: true
+title: "Benefits"
+description: "Managing a cloud infrastructure consisting of multiple AWS accounts is one of the most important but also complex topics for Well-Architected AWS environments."
 weight: 30
 ---
 

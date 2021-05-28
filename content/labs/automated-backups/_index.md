@@ -1,5 +1,6 @@
 ---
 title: "Automated Backups"
+description: "Lab Description for SEO"
 chapter: true
 weight: 40
 ---

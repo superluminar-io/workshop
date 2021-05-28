@@ -1,10 +1,10 @@
 ---
-title: "Introduction"
-chapter: true
+title: "Overview"
+description: "After finishing this workshop, you will understand the fundamental concepts that are required to set up and maintain a secure multi-account AWS environment."
 weight: 10
 ---
 
-# Introduction
+# Overview
 
 ## Goal Of The Workshop
 

@@ -1,5 +1,6 @@
 ---
 title: "Account Organization"
+description: "Lab Description for SEO"
 chapter: true
 weight: 20
 ---

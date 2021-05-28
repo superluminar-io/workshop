@@ -1,6 +1,6 @@
 ---
 title: "Cost"
-chapter: true
+description: "superwerker is free of charge."
 weight: 40
 ---
 

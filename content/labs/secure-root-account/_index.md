@@ -1,12 +1,13 @@
 ---
 title: "Secure Root Account"
+description: "Lab Description for SEO"
 chapter: true
 weight: 1
 ---
 
 # Single Sign-On
 
-By now, you signed in to your AWS environment using the root users email address and password. This is considered a bad practices and [very insecure](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html).
+To this point, you signed into your AWS environment using the root user's email address and password. This is considered bad practice and [very insecure](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html).
 
 Therefore, the first step for securing your AWS environment is to configure the root user with multi-factor authentication and enable yourself to access your AWS Account using AWS Single Sign-On.
 

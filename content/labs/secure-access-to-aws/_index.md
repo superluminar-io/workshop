@@ -1,5 +1,6 @@
 ---
 title: "Secure Access to AWS"
+description: "Lab Description for SEO"
 chapter: true
 weight: 10
 ---

@@ -1,8 +1,7 @@
 ---
-title: "Installation"
-chapter: true
+title: "Getting Started"
+description: "Getting started with superwerker is simple: You only need to deploy a single AWS CloudFormation template into an existing AWS account."
 weight: 20
-alias: why
 ---
 
 # superwerker setup

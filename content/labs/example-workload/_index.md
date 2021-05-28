@@ -1,5 +1,6 @@
 ---
 title: "Example Workload"
+description: "Lab Description for SEO"
 chapter: true
 weight: 30
 ---

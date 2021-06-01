@@ -34,7 +34,7 @@ To create a new S3 Bucket, use the [AWS S3 console](https://s3.console.aws.amazo
 
 ![CloudFormation for superwerker](/screenshots/workload/s3-button.png)
 
-After the S3 bucket was created, you are redirected to the list of your bucket. This list will include the new S3 bucket.
+After the S3 bucket was created, you are redirected to the list of your buckets. This list will include the new S3 bucket.
 
 ![CloudFormation for superwerker](/screenshots/workload/s3-success.png)
 

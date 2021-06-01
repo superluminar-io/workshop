@@ -70,6 +70,6 @@ If you used your existing email address for **AWS SSO email**, you should be abl
 
 ![CloudFormation for superwerker](/screenshots/sso/sso-workload.png)
 
-In this lab, we learnt how to structure our accounts into Organizational Units so that we can manage the accounts as a single group. This is more efficient and secure than individually configuring permissions for a large number of separate accounts. We also learnt how to create new accounts and to add them to existing OUs. In the next lab, we will use the workload account that we just created to test the security of a newly created resource.
+In this lab, we learnt how to divide our account structure into Organizational Units so that we can feasibly manage accounts as a single group. We also learnt how to create new accounts and to add them to existing OUs. Account management using Organizational Units is more efficient and secure than individually configuring and managing permissions of multiple accounts and helps to separate the management of workloads. In the next lab, we will use the workload account that we just created to test the security of a newly created resource.
 
 [superwerker]: https://superwerker.cloud

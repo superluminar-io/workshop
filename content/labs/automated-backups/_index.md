@@ -70,7 +70,7 @@ Using "Backup Plans," every day at 5am (UTC) new backups for all tagged resource
 
 > **Note:** You need to wait for the next day, to see the automated backup listed in AWS Backup.
 
-As soon as the first backup for your DynamoDB table is available, AWS Backup will list the table in the **Protected Resources**. For ensure you table is already backed up now, you can create an on-demand backup using the button in the top right corner.
+As soon as the first backup for your DynamoDB table is available, AWS Backup will list the table in the **Protected Resources**. To ensure your table is already backed up, you can create an on-demand backup using the button in the top right corner.
 
 ![CloudFormation for superwerker](/screenshots/backup/backup-on-demand.png)
 

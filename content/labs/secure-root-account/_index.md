@@ -38,3 +38,5 @@ The **IAM dashboard** of the **Identity and Access Management (IAM)** service sh
 1. Click the "Assign MFA” button
 
 ![IAM](/screenshots/sso/aws-mfa-assign.png)
+
+In this Lab we added multi-factor authentification to our AWS root login. This method is more secure than relying on a single email and password to log in because it adds an extra layer of security to account access. In the next lab we will learn how to enable an admin account, so that we don't have to use our root account for daily tasks. This is another important security measure, that keeps our AWS environment safe

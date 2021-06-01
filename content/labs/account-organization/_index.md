@@ -9,7 +9,7 @@ weight: 20
 
 When using AWS Organizations, AWS Accounts are organized in Organizational Units (OUs). This allows you to manage groups of accounts as one unit. During the setup, AWS Control Tower creates two OUs per default: `Core` and `Custom` (`Sandbox` and `Security` in recent versions).
 
-This lab covers the creation of your first Organizational Unit. You will use this to create your first workload-related AWS account. Per default, AWS Control Tower creates an additional OU for custom workloads (called `Custom`), but for the sake of this workshop you will create a new one.
+This lab covers the creation of your first Organizational Unit. You will use this to create your first workload-related AWS account. By default, AWS Control Tower creates an additional OU for custom workloads (called `Custom`), but for the sake of this workshop you will create a new one.
 
 ## Create an OU
 
@@ -69,5 +69,7 @@ It will take some time until the new account is ready. You can check the status 
 If you used your existing email address for **AWS SSO email**, you should be able to see and access the new AWS account in the **AWS Single Sign-On** portal website now.
 
 ![CloudFormation for superwerker](/screenshots/sso/sso-workload.png)
+
+In this lab, we learnt how to structure our accounts into Organizational Units so that we can manage the accounts as a single group. This is more efficient and secure than individually configuring permissions for a large number of separate accounts. We also learnt how to create new accounts and to add them to existing OUs. In the next lab, we will use the workload account that we just created to test the security of a newly created resource.
 
 [superwerker]: https://superwerker.cloud

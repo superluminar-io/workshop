@@ -111,4 +111,6 @@ There are still two rules with the status `Noncompliant`: **bucket-ssl-requests-
 
 With **AWS Config**, you can use a variety of [managed rules by AWS](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html) or even create your own [custom AWS Config rules using AWS Lambda](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_develop-rules.html).
 
+We looked at our AWS Security Hub notifications to determine if a newly created resource was compliant with rules that superwerker sets in our AWS Config ruleset. We also learned how to use this information to fix security compliance violations that might occur when we provision resources in our AWS accounts. In the next lab we will learn how superwerker keeps our data safe by automatically backing up common storage resources.
+
 [superwerker]: https://superwerker.cloud

@@ -80,5 +80,7 @@ With a manual on-demand backup in place, your table is listed a **Protected Reso
 
 Tomorrow, by the same time, there will be a automatically created backup for your table.
 
+We have learnt which services superwerker provides automated backups for and how superwerker does this i.e. by tagging commonly used storage services as requiring backup. You also learnt where you can see the backup plan and how to create an immediate backup if desired. This keeps your data secure and ready to be restored if necessary.
+
 [aws backup]: https://aws.amazon.com/backup/
 [superwerker]: https://superwerker.cloud

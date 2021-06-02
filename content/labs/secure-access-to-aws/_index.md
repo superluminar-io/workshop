@@ -78,4 +78,6 @@ To change the sub domain, perform these steps:
 1. Click to button to customize the “User portal URL”
 1. Enter a customized sub domain
 
+In this lab we enabled and switched to our admin account so that we can avoid the bad practice of working in our root account on daily tasks. We then setup AWS Single-Sign On so that we can access any accounts that our user account has permission to use. Finally, we configured the login URL to something more memorable than the default for ease of access. To find out how best to structure accounts in your AWS environment, check out the next lab.
+
 [superwerker]: https://github.com/superwerker/superwerker

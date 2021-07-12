@@ -46,17 +46,17 @@ enableEmoji = true
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]] 
-name = "<i class='fas fa-lightbulb'></i> superwerker: Website"
+name = "<i class='fas fa-lightbulb'></i> superwerker"
 url = "https://superwerker.cloud"
 weight = 1
 
 [[menu.shortcuts]] 
-name = "<i class='fas fa-lightbulb'></i> superwerker: GitHub Repository"
+name = "<i class='fas fa-lightbulb'></i> GitHub Repository"
 url = "https://github.com/superwerker/superwerker"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-lightbulb'></i> superwerker: AWS Quick Start"
+name = "<i class='fas fa-lightbulb'></i> AWS Quick Start"
 url = "https://aws.amazon.com/quickstart/architecture/superwerker/"
 weight = 11
 

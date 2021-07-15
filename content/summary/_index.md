@@ -11,7 +11,7 @@ You made it! Thanks for using [superwerker]. By now you should be familiar with 
 
 ## Superwerker Setup Checklist
 
-Now that you have finished the installation of superwerker and completed the labs, you should have the following features in places:
+Now that you have finished the installation of superwerker and completed the labs, you should have the following features in place:
 
 - An AWS root account that is set up and protected with multi-factor authentification (MFA)
 - Secure and central access to your AWS environment via AWS Single Sign-on
@@ -23,6 +23,6 @@ Aside from these features you should have a solid understanding of the fundament
 
 ## Still Have Questions?
 
-If you want more information related to superwerker or its creators, you can find relevant links in the lower section of the workshop menu.
+If you want more information related to superwerker or its creators, you can find relevant links in the lower section of the workshop menu under the heading 'More'.
 
 [superwerker]: https://github.com/superwerker/superwerker

@@ -7,14 +7,10 @@ weight: 70
 
 # Clean up AWS resources
 
-Thanks for using [superwerker]; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at varius augue, non viverra nunc. Praesent vel nisl a enim accumsan feugiat. Donec sed consequat augue. Quisque vulputate magna quis enim sagittis, a imperdiet lorem bibendum. 
+In this workshop, we created some resources in your account, if you no longer want to use these resources, you need to delete them. You can delete the resources using one of the below options:
 
-## Lorem Ipsum
-
-Aenean ut sapien nec velit faucibus aliquam eu ac orci. Aliquam consequat viverra purus, ut mattis nisi lobortis quis. Aenean auctor ex congue, varius velit sed, lacinia nisl. Vestibulum id arcu eu enim mattis sagittis. Vivamus varius libero tincidunt ipsum elementum congue. Donec vehicula tellus at enim fermentum facilisis. Integer at arcu ac est varius dapibus. Aenean aliquam imperdiet dui. 
-
-### Nullam dictum egestas vulputate
-
-Duis et laoreet leo, vitae ullamcorper felis. Ut aliquam, orci ut pellentesque aliquet, metus diam sagittis dui, id convallis orci felis a dui. Sed a arcu accumsan, condimentum nisi ac, mattis eros.
-
-[superwerker]: https://github.com/superwerker/superwerker
+1. Delete the stack instances using AWS management console. Please follow below steps for the same:
+    1. Open the AWS management console and navigate to cloudformation service.
+    2. Select **Stacksets** from the left corner navigation plane. Choose the superwerker stack set.
+    3. After selecting superwerker stack, choose **Delete stacks from Stacksets** from the **Action** menu. See [this](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stackinstances-delete.html#stackinstances-delete-console) link for more details.
+2. If you have AWS CLI installed, delete the stack using the AWS CLI command. See [this](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stackinstances-delete.html#stackinstances-delete-cli) link for more details: `aws cloudformation delete-stack-instances --stack-set-name my-awsconfig-stackset --deployment-targets OrganizationalUnitIds='["ou-rcuk-1x5jlwo", "ou-rcuk-slr5lh0a"]' --regions '["eu-west-1"]' --no-retain-stacks`

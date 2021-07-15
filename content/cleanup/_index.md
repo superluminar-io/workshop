@@ -7,7 +7,7 @@ weight: 70
 
 # Clean up AWS resources
 
-In this workshop, we created some resources in your account, if you no longer want to use these resources, you need to delete them. You can delete the resources using one of the below options:
+In this workshop, we created some resources in your account, if you no longer want to use these resources, you need to delete them. You can delete the resources using one of the options below:
 
 - Delete the stack instances using AWS management console. Please follow below steps for the same:
     - Open the AWS management console and navigate to cloudformation service.

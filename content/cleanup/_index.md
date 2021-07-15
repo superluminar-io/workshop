@@ -7,14 +7,10 @@ weight: 70
 
 # Clean up AWS resources
 
-Thanks for using [superwerker]; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at varius augue, non viverra nunc. Praesent vel nisl a enim accumsan feugiat. Donec sed consequat augue. Quisque vulputate magna quis enim sagittis, a imperdiet lorem bibendum. 
+In this workshop, we created some resources in your account, if you no longer want to use these resources, you need to delete them. You can delete the resources using one of the options below:
 
-## Lorem Ipsum
-
-Aenean ut sapien nec velit faucibus aliquam eu ac orci. Aliquam consequat viverra purus, ut mattis nisi lobortis quis. Aenean auctor ex congue, varius velit sed, lacinia nisl. Vestibulum id arcu eu enim mattis sagittis. Vivamus varius libero tincidunt ipsum elementum congue. Donec vehicula tellus at enim fermentum facilisis. Integer at arcu ac est varius dapibus. Aenean aliquam imperdiet dui. 
-
-### Nullam dictum egestas vulputate
-
-Duis et laoreet leo, vitae ullamcorper felis. Ut aliquam, orci ut pellentesque aliquet, metus diam sagittis dui, id convallis orci felis a dui. Sed a arcu accumsan, condimentum nisi ac, mattis eros.
-
-[superwerker]: https://github.com/superwerker/superwerker
+- Delete the stack instances using the AWS management console. To do this you can follow the steps below:
+    - Open the AWS management console and navigate to the AWS CloudFormation service.
+    - Select **Stacksets** from the left corner of the navigation pane. Choose the superwerker stack set.
+    - After selecting the superwerker stack, choose the **Delete stacks from Stacksets** option from the **Action** menu. See [this](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stackinstances-delete.html#stackinstances-delete-console) link for more details.
+- If you have the AWS CLI installed, delete the stack using the AWS CLI command. See [this](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stackinstances-delete.html#stackinstances-delete-cli) link for more details: `aws cloudformation delete-stack --stack-name myteststack`

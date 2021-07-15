@@ -9,7 +9,7 @@ weight: 60
 
 You made it! Thanks for using [superwerker]. By now you should be familiar with the features offered by superwerker and the day-to-day governance of your new AWS environment. You will also have had hands on experience securing and organizing your account and protecting your data.
 
-## superwerker setup checklist
+## superwerker Setup Checklist
 
 Now that you have finished the installation of superwerker and completed the labs, you should have the following features in places:
 

@@ -7,14 +7,22 @@ weight: 60
 
 # Summary
 
-Thanks for using [superwerker]; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at varius augue, non viverra nunc. Praesent vel nisl a enim accumsan feugiat. Donec sed consequat augue. Quisque vulputate magna quis enim sagittis, a imperdiet lorem bibendum. 
+You made it! Thanks for using [superwerker]. By now you should be familiar with the features offered by superwerker and the day-to-day governance of your new AWS environment. You will also have had hands on experience securing and organizing your account and protecting your data.
 
-## Lorem Ipsum
+## superwerker setup checklist
 
-Aenean ut sapien nec velit faucibus aliquam eu ac orci. Aliquam consequat viverra purus, ut mattis nisi lobortis quis. Aenean auctor ex congue, varius velit sed, lacinia nisl. Vestibulum id arcu eu enim mattis sagittis. Vivamus varius libero tincidunt ipsum elementum congue. Donec vehicula tellus at enim fermentum facilisis. Integer at arcu ac est varius dapibus. Aenean aliquam imperdiet dui. 
+Now that you have finished the installation of superwerker and completed the labs, you should have the following features in places:
 
-### Nullam dictum egestas vulputate
+- An AWS root account that is set up and protected with multi-factor authentification (MFA)
+- Secure and central access to your AWS environment via AWS Single Sign-on
+- A multi-account setup, structured with the help of AWS Control Tower and AWS Organizations
+- Notifications informing you of the compliancy of your resources via AWS Security Hub and AWS Config
+- Automated daily backups to protect your data
 
-Duis et laoreet leo, vitae ullamcorper felis. Ut aliquam, orci ut pellentesque aliquet, metus diam sagittis dui, id convallis orci felis a dui. Sed a arcu accumsan, condimentum nisi ac, mattis eros.
+Aside from these features you should have a solid understanding of the fundamental concepts that were introduced in this workshop and how to maintain your environment. 
+
+## Still have questions?
+
+If you want more information related to superwerker or its creators, you can find relevant links in the lower section of the workshop menu.
 
 [superwerker]: https://github.com/superwerker/superwerker

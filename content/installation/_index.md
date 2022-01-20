@@ -7,10 +7,11 @@ weight: 20
 
 # Getting Started
 
-## Prerequisites 
+## Prerequisites
 
 To install [superwerker], you need to fulfil the following two prerequisites:
 
+1. A deployment region in which AWS Control Tower is available. superwerker relies on AWS Control Tower which is not available in every AWS region. See details [here](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/)
 1. A dedicated AWS Account with administrative access ([sign up here](https://portal.aws.amazon.com/billing/signup))
 1. A domain and manageable DNS settings (You can register domains with [Amazon Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html))
 

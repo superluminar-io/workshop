@@ -23,7 +23,7 @@ WARNING: After performing these steps you will no longer have access to the AWS 
 6. Fill in the captcha
 7. Now go back to your root account.
 8. Navigate to the AWS Systems Manager and click on Parameter Store in the menu to the left.
-9. Here you will find a parameter named [ETWAS], this is the password you can use to log into your account
+9. Here you will find a parameter named [ETWAS], this is the password reset url you can use to change your password and log in to your account.
 10. Return to the login page and use your password to log in to the subaccount your are trying to close.
 11. Use the searchbar in the AWS console to navigate to AWS Billing
 12. Scroll to the bottom of the page, in the small print there is a link to the account settings. Click this link.

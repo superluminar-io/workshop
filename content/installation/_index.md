@@ -7,7 +7,7 @@ weight: 20
 
 # Getting Started
 
-## Prerequisites 
+## Prerequisites
 
 To install [superwerker], you need to fulfil the following two prerequisites:
 
@@ -51,7 +51,12 @@ If your company's primary domain is `example.com` you can consider a domain like
 
 1. Fill in the Domain for automated DNS configuration (see the screenshot below)
 1. Scroll down to the bottom of the page and tick the boxes acknowledging that CloudFormation will create IAM resources such as IAM Roles and IAM Policies
-1. Click the **Create Stack** button and it will start the installation!
+1. Click "Create changeset" (Creating a changeset instead of "create stack" allows you to enable options that protect against errors that can ocassionally occur on stack rollbacks)
+1. Choose disable "Change sets for nested stacks"
+1. Click "Create change set"
+1. Wait for change set to become ready
+1. Press "Execute" and choose "Preserve successfully provisioned resources"
+
 
 ![CloudFormation for superwerker](/screenshots/installation/domain-filled.png)
 

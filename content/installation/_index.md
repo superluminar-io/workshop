@@ -62,6 +62,14 @@ If your company's primary domain is `example.com` you can consider a domain like
 
 ![CloudFormation for superwerker](/screenshots/installation/cloudformation-confirm-iam.png)
 
+![CloudFormation for superwerker](/screenshots/installation/cloudformation-create-changeset.png)
+
+![CloudFormation for superwerker](/screenshots/installation/cloudformation-execute-changeset.png)
+
+![CloudFormation for superwerker](screenshots/installation/cloudformation-preserve-successfully-provisioned-resources.png)
+
+![CloudFormation for superwerker](/screenshots/installation/cloudformation-started.png)
+
 ![CloudFormation for superwerker](/screenshots/installation/cloudformation-started.png)
 
 > **Further reading:** creating IAM Resources via CloudFormation see [Acknowledging IAM resources in AWS CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#using-iam-capabilities).

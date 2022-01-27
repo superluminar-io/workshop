@@ -11,7 +11,6 @@ weight: 20
 
 To install [superwerker], you need to fulfil the following two prerequisites:
 
-1. An AWS region in which AWS Control Tower is available. superwerker relies on AWS Control Tower which is not available in every AWS region. At the time of writing AWS Control Tower is available in: Canada (Central), Europe (Frankfurt), Europe (London), Europe (Stockholm), Asia Pacific (Singapore), US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), and Asia Pacific (Sydney)
 1. A dedicated AWS Account with administrative access ([sign up here](https://portal.aws.amazon.com/billing/signup))
 1. A domain and manageable DNS settings (You can register domains with [Amazon Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html))
 
@@ -22,7 +21,7 @@ if these are in place, you can now begin the installation process.
 Getting started with [superwerker] is simple: You only need to deploy a single AWS CloudFormation template into an existing AWS account.
 
 1. Sign into your AWS account with your root user email and password if you are not already logged in.
-1. Select the AWS region in which you want to deploy superwerker.
+1. Select the AWS region in which you want to deploy superwerker. superwerker relies on AWS Control Tower, which means you should choose an AWS region in which the service is available. At the time of writing, AWS Control Tower is available in: Canada (Central), Europe (Frankfurt), Europe (London), Europe (Stockholm), Asia Pacific (Singapore), US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), and Asia Pacific (Sydney).
 
 ![GitHub releases for superwerker](/screenshots/installation/aws-signin.png)
 

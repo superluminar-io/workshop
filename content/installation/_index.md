@@ -51,24 +51,24 @@ If your company's primary domain is `example.com` you can consider a domain like
 
 1. Fill in the Domain for automated DNS configuration (see the screenshot below)
 1. Scroll down to the bottom of the page and tick the boxes acknowledging that CloudFormation will create IAM resources such as IAM Roles and IAM Policies
-1. Click "Create changeset" (creating a changeset instead of "create stack" allows you to enable options that protect against errors that can ocassionally occur on stack rollbacks)
-1. Choose disable "Change sets for nested stacks"
-1. Click "Create change set"
-1. Wait for change set to become ready
-1. Press "Execute" and choose "Preserve successfully provisioned resources"
-
+1. Click "Create changeset" (creating a changeset allows us to access stack failure options that are not available if we were to select 'create stack')
 
 ![CloudFormation for superwerker](/screenshots/installation/domain-filled.png)
 
 ![CloudFormation for superwerker](/screenshots/installation/cloudformation-confirm-iam.png)
 
+1. Choose disable "Change sets for nested stacks"
+1. Click "Create changeset"
+
 ![CloudFormation for superwerker](/screenshots/installation/cloudformation-create-changeset.png)
+
+1. Wait for the changeset to become ready then press "Execute"
 
 ![CloudFormation for superwerker](/screenshots/installation/cloudformation-execute-changeset.png)
 
-![CloudFormation for superwerker](screenshots/installation/cloudformation-preserve-successfully-provisioned-resources.png)
+1. Choose "Preserve successfully provisioned resources" (this option protects against errors during stack rollouts, and allows continuing the rollout of superwerker even if errors occur during the installation).
 
-![CloudFormation for superwerker](/screenshots/installation/cloudformation-started.png)
+![CloudFormation for superwerker](screenshots/installation/cloudformation-preserve-successfully-provisioned-resources.png)
 
 ![CloudFormation for superwerker](/screenshots/installation/cloudformation-started.png)
 

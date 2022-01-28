@@ -21,7 +21,6 @@ if these are in place, you can now begin the installation process.
 Getting started with [superwerker] is simple: You only need to deploy a single AWS CloudFormation template into an existing AWS account.
 
 1. Sign into your AWS account with your root user email and password if you are not already logged in.
-1. Select the AWS region in which you want to deploy superwerker. superwerker relies on AWS Control Tower, which means you should choose an AWS region in which the service is available. At the time of writing, AWS Control Tower is available in: Canada (Central), Europe (Frankfurt), Europe (London), Europe (Stockholm), Asia Pacific (Singapore), US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), and Asia Pacific (Sydney).
 
 ![GitHub releases for superwerker](/screenshots/installation/aws-signin.png)
 
@@ -35,6 +34,9 @@ After clicking on the **Quick Install** link on GitHub, you will be redirected t
 
 ![CloudFormation for superwerker](/screenshots/installation/cloudformation-start.png)
 
+1. Select the AWS region in which you want to deploy superwerker. superwerker relies on AWS Control Tower, which means you should choose an AWS region in which the service is available. At the time of writing, AWS Control Tower is available in: Canada (Central), Europe (Frankfurt), Europe (London), Europe (Stockholm), Asia Pacific (Singapore), US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), and Asia Pacific (Sydney).
+
+![CloudFormation for superwerker](/screenshots/installation/cloudformation-choose-a-region.png)
 ## AWS CloudFormation
 
 The CloudFormation template for superwerker supports disabling of optional components; but for this workshop, please keep all components enabled.

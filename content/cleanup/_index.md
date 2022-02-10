@@ -7,20 +7,30 @@ weight: 70
 
 # Clean up AWS resources
 
-In this workshop, we created some resources in your account, if you no longer want to use these resources, you need to delete them. You can delete the resources using one of the options below:
+In this workshop, we created some resources in your account, if you no longer want to use these resources, you need to delete them.
 
-## AWS Management Console
+Closing accounts is an example of a root-user action. So you need to sign into each of your subaccounts using the steps described in the lab: "Performing root-user actions" and then close them using the instructions below.
 
-Delete the stack instances using the AWS management console:
+## Deleting accounts
 
-- Open the AWS management console and navigate to the AWS CloudFormation service.
-- Select **Stacksets** from the left corner of the navigation pane. Choose the superwerker stack set.
-- After selecting the superwerker stack, choose the **Delete stacks from Stacksets** option from the **Action** menu. See [this](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stackinstances-delete.html#stackinstances-delete-console) link for more details.
+WARNING: After performing these steps you will no longer have access to the AWS Account that you created for this workshop or the resources that they contain.
 
-## Command Line Interface
+After following the steps in the "Performing root-user actions" lab to sign into one of your subaccounts...
 
-Delete the stack using the AWS CLI command. See [this](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stackinstances-delete.html#stackinstances-delete-cli) link for more details:
+1.  Use the subaccount email address and your newly reset password to log in to the subaccount you are trying to close.
 
-```bash
-$ > aws cloudformation delete-stack --stack-name myteststack
-```
+    ![superwerker cleanup](/screenshots/cleanup/cleanup-login-to-subaccount.png)
+
+1.  Click on your account name in the top right corner of the console.
+1.  Select Account
+
+    ![superwerker cleanup](/screenshots/cleanup/cleanup-go-to-account-settings.png)
+
+1.  Scroll to the bottom of the 'Account' page
+1.  Tick all the boxes to agree to close your subaccount
+1.  Click the red 'close account' button.
+
+    ![superwerker cleanup](/screenshots/cleanup/cleanup-close-account-button.png)
+
+1.  Repeat these steps for each of your subaccounts until only your root user account remains.
+1.  Now use the same procedure to delete your root user account.

@@ -11,7 +11,7 @@ In this workshop, we created some resources in your account, if you no longer wa
 
 Closing accounts is an example of a root-user action. So you need to sign into each of your subaccounts using the steps described in the lab: "Performing root-user actions" and then close them using the instructions below.
 
-## Delete Subaccounts
+## Deleting accounts
 
 WARNING: After performing these steps you will no longer have access to the AWS Account that you created for this workshop or the resources that they contain.
 
@@ -32,5 +32,5 @@ After following the steps in the "Performing root-user actions" lab to sign into
 
     ![superwerker cleanup](/screenshots/cleanup/cleanup-close-account-button.png)
 
-1.  Repeat these steps for each of your subaccounts until only your root account remains.
+1.  Repeat these steps for each of your subaccounts until only your root user account remains.
 1.  Now use the same procedure to delete your root user account.

@@ -1,11 +1,11 @@
 ---
-title: "Perform root-user actions in member AWS accounts"
+title: "Perform Root-User Actions in Member AWS accounts"
 description: "The superwerker open source solution by AWS Advanced Partners kreuzwerker and superluminar automates the setup of an AWS Cloud environment with prescriptive best practices. It enables startups and SMBs to focus on their core business - by saving setup and maintenance time and money."
 chapter: true
-weight: 20
+weight: 60
 ---
 
-# Perform root-user actions in member AWS accounts
+# Perform Root-user Actions in Member AWS Accounts
 
 In some cases you will need to perform an action in a member AWS account that can only be done by a root-user. Actions which can be only performed by the root user include changing your support plan, enableing multifactor authentication, or closing the account. For a longer list of root-user actions see [this documentation](https://docs.aws.amazon.com/general/latest/gr/root-vs-iam.html).
 
@@ -22,16 +22,15 @@ In AWS Organizations you will see your multi-account structure. Click on 'List'.
 
 ![superwerker root-user-actions](/screenshots/perform-root-user-actions/organization-structure.png)
 
-Look for the member AWS account in which you want to perform a root user action and copy and paste the email address associated with the member AWS account.
-
-You will now need to perform a password-reset for the root user if the AWS account, since AWS accounts created via AWS Organizations don't have password set initially. Please refer to [the AWS Organizations documentation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html#orgs_manage_accounts_access-as-root) for more details.
+Look for the member AWS account in which you want to perform a root user action and copy the email address associated with the member AWS account.
 
 Open an incognito window in your browser and navigate to the [AWS login page](https://console.aws.amazon.com/). Paste the email address of the member AWS account that you copied into the email field.
 
 ![superwerker root-user-actions](/screenshots/perform-root-user-actions/login-page.png)
 
-You will now need to perform a password-reset for the root user if the AWS account, since AWS accounts created via AWS Organizations don't have password set initially. Please refer to [the AWS Organizations documentation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html#orgs_manage_accounts_access-as-root) for more details.
-So click on "forgotten password" and fill in the captcha.
+You will now need to perform a password-reset for the root user of the AWS account, since AWS accounts created via AWS Organizations don't initially have a password set. Please refer to [the AWS Organizations documentation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html#orgs_manage_accounts_access-as-root) for more details.
+
+So click on the "forgotten password" link, then fill in the captcha.
 
 ![superwerker root-user-actions](/screenshots/perform-root-user-actions/password-recovery.png)
 
@@ -40,7 +39,7 @@ Navigate to the AWS Systems Manager and click on Parameter Store in the menu to 
 
 ![superwerker root-user-actions](/screenshots/perform-root-user-actions/navigate-to-systems-manager.png)
 
-Here you will find a parameter that begins with "superwerker/rootmail/pw-reset-link/...", this is where the password reset url is stored.
+Here you will find a parameter that begins with `superwerker/rootmail/pw-reset-link/...`, this is where the password reset url is stored.
 Click on the parameter and copy the password reset URL.
 
 ![superwerker root-user-actions](/screenshots/perform-root-user-actions/password-reset-parameter.png)

@@ -1,17 +1,17 @@
 ---
-title: "Perform root-user actions in subaccounts"
+title: "Perform Root-user Actions in Subaccounts"
 description: "The superwerker open source solution by AWS Advanced Partners kreuzwerker and superluminar automates the setup of an AWS Cloud environment with prescriptive best practices. It enables startups and SMBs to focus on their core business - by saving setup and maintenance time and money."
 chapter: true
 weight: 20
 ---
 
-# Perform root-user actions in subaccounts
+# Perform Root-user Actions in Subaccounts
 
 In some cases you will need to perform an action in a subaccount that can only be done by a root-user. For example. this is necessary if you want to change your support plan, enable multifactor authentication, or close the account. For a longer list of root-user actions see [this](https://docs.aws.amazon.com/general/latest/gr/root-vs-iam.html) documentation.
 
 In this lab you will learn the steps you need to do to complete such actions.
 
-## Signing into a subaccount
+## Signing into a Subaccount
 
 First, navigate to your AWS Root Account.
 Search for AWS Organizations in the search field at the top of the screen and select it when it appears.

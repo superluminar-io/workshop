@@ -2,7 +2,7 @@
 title: "Perform root-user actions in member AWS accounts"
 description: "The superwerker open source solution by AWS Advanced Partners kreuzwerker and superluminar automates the setup of an AWS Cloud environment with prescriptive best practices. It enables startups and SMBs to focus on their core business - by saving setup and maintenance time and money."
 chapter: true
-weight: 20
+weight: 60
 ---
 
 # Perform root-user actions in member AWS accounts

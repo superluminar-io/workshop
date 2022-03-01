@@ -34,7 +34,7 @@ After clicking on the **Quick Install** link on GitHub, you will be redirected t
 
 ![CloudFormation for superwerker](/screenshots/installation/cloudformation-start.png)
 
-1. Select the AWS region in which you want to deploy superwerker. superwerker relies on AWS Control Tower, which means you should choose an AWS region in which the service is available. At the time of writing, AWS Control Tower is available in: Canada (Central), Europe (Frankfurt), Europe (London), Europe (Stockholm), Asia Pacific (Singapore), US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), and Asia Pacific (Sydney).
+1. Select the AWS region in which you want to deploy superwerker. superwerker relies on AWS Control Tower, which means you must choose an AWS region in which the service is available. At the time of writing, AWS Control Tower is available in: Canada (Central), Europe (Frankfurt), Europe (London), Europe (Stockholm), Asia Pacific (Singapore), US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), and Asia Pacific (Sydney).
 
 ![CloudFormation for superwerker](/screenshots/installation/cloudformation-choose-a-region.png)
 ## AWS CloudFormation

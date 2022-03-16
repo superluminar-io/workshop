@@ -7,30 +7,27 @@ weight: 70
 
 # Clean up AWS resources
 
-In this workshop, we created some resources in your account, if you no longer want to use these resources, you need to delete them.
+In this workshop, you created some resources in your AWS account, as well as member AWS accounts which have been created through AWS Control Tower. If you no longer want to use them, you need to close all AWS sub-accounts first. After that you can close the AWS management account.
 
-Closing accounts is an example of a root-user action. So you need to sign into each of your subaccounts using the steps described in the lab: "Root-user Actions in Subaccounts" and then close them using the instructions below.
+Closing member AWS accounts is an example of a [performing root-user actions in member AWS accounts]({{< ref "/labs/root-user-actions-in-subaccounts" >}}). So you need to sign in into each of your member AWS accounts using the steps described in the lab ["Perform root-user actions in member AWS accounts"]({{< ref "/labs/root-user-actions-in-subaccounts" >}}) and then close them using the instructions below.
 
-## Deleting accounts
+## Closing member AWS accounts and the AWS management account 
 
 WARNING: After performing these steps you will no longer have access to the AWS Account that you created for this workshop or the resources that they contain.
 
-After following the steps in the "Root-user Actions in Subaccounts" lab to sign into one of your subaccounts...
+For each AWS member account created, you need to close it:
 
-1.  Use the subaccount email address and your newly reset password to log in to the subaccount you are trying to close.
-
-    ![superwerker cleanup](/screenshots/cleanup/cleanup-login-to-subaccount.png)
-
-1.  Click on your account name in the top right corner of the console.
-1.  Select Account
+1. Follow the steps in the ["Perform root-user actions in member AWS accounts"]({{< ref "/labs/root-user-actions-in-subaccounts" >}}) lab to sign into the member AWS account.
+3. Click on your account name in the top right corner of the console.
+4. Select Account
 
     ![superwerker cleanup](/screenshots/cleanup/cleanup-go-to-account-settings.png)
 
-1.  Scroll to the bottom of the 'Account' page
-1.  Tick all the boxes to agree to close your subaccount
-1.  Click the red 'close account' button.
+5. Scroll to the bottom of the 'Account' page
+6. Tick all the boxes to agree to close this AWS account
+7. Click the red 'close account' button.
 
     ![superwerker cleanup](/screenshots/cleanup/cleanup-close-account-button.png)
 
-1.  Repeat these steps for each of your subaccounts until only your root user account remains.
-1.  Now use the same procedure to delete your root user account.
+8. Repeat these steps for each of your member AWS accunts until only your root user account remains.
+9. If all member AWS accounts have been closed, repeat the steps above for the AWS management account.
